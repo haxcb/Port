@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Hasiba Arshad | Portfolio</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		
+		<link rel="stylesheet" href="js/FlexSlider/flexslider.css" type="text/css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/fonts.css" />	
+		
+		<script src="js/jquery-1.9.0.js"></script>
+		<!-- Resets -->
+		<script src="js/html5shiv.js"></script>
+
+		<!-- Custom -->
+		<script src="js/scripts.js"></script>
+		
+	</head>
+	<body class="inda work">
+		<div id="intro" data-scroll="white">
+			<div id="introContents" data-scroll="down">
+				<img src="img/inda/logo.png" />
+				<h2 class="title">An interactive node-based infograph</h3>
+			</div>
+		</div>
+		
+		<div id="introBorder"></div>
+		
+		<section class="start">
+			<div class="contents">
+				<hr />
+				<h2 class="center">Overview</h2>
+				<div class="center">
+					<span>The Inda Relationship Visualizer is a tool that plots out the character relationships found in the first book of Inda, by Sherwood Smith.</span>
+					<span>Seeing as the universe is massive and laden with over a hundred named characters, readers can easily lose track of who is who. The tool allows readers to easily search up and identify characters that they come across as they read the book.</span>
+					<span><a href="http://www.sfu.ca/~harshad/files/IAT355/Final/">View it in action &#9654;</a></span>
+				</div>
+				<hr />
+			</div>
+
+		</section>
+		
+		<section class="texBG">
+			<div class="cloudBorder"></div>
+			<div class="contents" data-scroll="white">
+				<h2 class="center">Screenshots</h2>
+				<div class="slider">
+					<div class="flexslider">
+					  <ul class="slides">
+						<li>
+							<img src="img/inda/1.png" />
+						</li>
+						<li>
+							<img src="img/inda/2.png" />
+						</li>
+						<li>
+							<img src="img/inda/3.png" />
+						</li>
+					  </ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<div class="cloudBorderTop"></div>
+		<section>
+			<div class="contents">
+				<hr />
+				<h2 class="center">Usage</h2>
+				<div class="center">
+					<img src="img/inda/usage.png" />
+					<span>The infograph allows readers to look up relationship maps relative to every character within the book. Readers can choose the centerpoint via a dropdown menu.</span>
+					<span>Further filtration can be done on the node network, by enabling and disabling relation filters as well as filtering out insignificant characters using the slider.</span>
+					
+					<span>Seeing as character relationships are being plot out, a node network was used as it is the most optimal and intuitive representation. </span>
+				</div>
+				<hr />
+			</div>
+		</section>
+		
+		<section class="texBG">
+			<div class="cloudBorder"></div>
+			<div class="contents" data-scroll="white">
+				<div class="center">
+					<div class="col">
+						<h3>Roles</h3>
+						<div class="blurb">
+							<span>UI designer</span>
+							<span>UX designer</span>
+							<span>Programmer</span>
+						</div>
+					</div>
+					<div class="col">
+						<h3>Tools</h3>
+						<div class="blurb">
+							<span>Adobe Photoshop</span>
+							<span>D3.js</span>
+							<span>GitHub</span>
+						</div>
+					</div>
+					<div class="col">
+						<h3>Comrades</h3>
+						<div class="blurb">
+							<span>Shery Sumal</span>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</section>
+		
+		<div class="cloudBorderTop"></div>
+		<section class="copyright">
+			<div class="contents">
+				<div class="center">&copy; <script>document.write(new Date().getFullYear());</script> Hasiba Arshad</div>
+			</div>
+		</section>
+		
+		<a href="index.html" class="back">&lt; Back</a>
+		
+		<!-- Scripts -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
+
+		<!-- FlexSlider -->
+		<script defer src="js/FlexSlider/jquery.flexslider.js"></script>
+
+		<script type="text/javascript">
+			$(window).load(function(){
+				$('.flexslider').flexslider({
+					animation: "slide",
+					start: function(slider){
+						$('body').removeClass('loading');
+					}
+				});
+			});
+		</script>
+
+	</body>
+</html>

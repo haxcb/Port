@@ -1,0 +1,727 @@
+/*************************************************
+				SITE-WIDE STYLES
+*************************************************/
+
+html, body {
+	/* Clear margins & padding */
+	margin:0;
+	padding:0;
+	
+	/* Allow elements to size to 100% height of browser */
+	height:100%;
+	
+	font-family:'AftaSans', Tahoma, Arial, sans-serif;
+	color:#777;
+	font-size:1.2em;
+}
+
+header, hgroup, nav, menu, section, article, aside, footer {
+	display: block;
+}
+
+
+h1, h2 {
+	color:#999;
+	font-family:'ADayWithoutSun', Tahoma, Arial, sans-serif;
+	text-transform:uppercase;
+	font-size:8.5vw;
+	line-height:100%;
+	font-weight:normal;
+	margin:0;  /* removes weird space with scrollbar */
+}
+
+h2 {
+	color:#fff;
+	font-size:2.5em;
+	font-family:'Quicksand', Tahoma, Arial, sans-serif;
+}
+
+
+img {
+	width:100%;
+}
+
+
+.title {
+	color:#fff;
+	font-family:'ColaborateThinRegular', Tahoma, Arial, sans-serif;
+	font-weight:normal;
+	text-transform:uppercase;
+	margin:0;
+	padding:0;
+	text-align:center;
+}
+
+.sideImage {
+	float:left;
+	width:43%;
+	margin-top:-35px;
+}
+
+.rightText {
+	margin-left:45%;
+	margin-top:-30px;
+}
+
+.center {
+	text-align:center;
+}
+
+.clear {
+	clear:both;
+}
+
+hr {
+	border:none;
+	background-image:url('../img/hr.png');
+	width:100%;
+	height:61px;
+	background-position:center;
+	max-width:1016px;
+	max-height:61px;
+	margin:50px 0;
+}
+.contents hr:first-child {
+	margin-top:0;
+}
+
+.hoverHint a , .hoverHint a:visited {
+	color:#00f;
+	font-weight:bold;
+	font-style:normal;
+}
+
+.hoverHint {
+	position:relative;
+	display:inline;
+}
+
+
+
+.translation {
+	position:absolute;
+	display:none;
+	background-color:#aaa;
+	box-sizing:border-box;
+	text-align:center;
+	/* overflow: hidden; */
+    white-space: nowrap;
+}
+/* .translation {
+	display:none;
+	background-color:#aaa;
+	position:absolute;
+	width:250px;
+	border-radius:20px;
+	-webkit-border-radius:20px;
+	-moz-border-radius:20px;
+	padding:25px 10px;
+	text-align:center;
+} */	
+.translation:before {
+	content:' ';
+	position:absolute;
+	width:0;
+	height:0;
+	left:30px;
+	top:70px;
+	border:20px solid;
+	border-color: #aaa transparent transparent #aaa;
+}
+
+
+/* .hoverHint:hover .translation {
+	display:block;
+}  */
+
+.contents span {
+	display:block;
+	margin:1em 0;
+}
+
+a, a:active, a:visited {
+	text-decoration:none;
+	color:#88f;
+	font-weight:bold;
+}
+
+a:hover {
+	color:#ccf;
+}
+
+
+section {
+	position:relative;
+	top:100%;
+	background-color:#fff;
+	padding-top:70px;
+	box-sizing:border-box;
+}
+
+section.start {
+	margin-top:65px;
+}
+
+.fullHeight {
+	min-height:100%;
+}
+
+
+.contents {
+	margin:0 auto;
+	width:55%;
+	padding:1px;
+}
+
+.whiteCover {
+	background-color:#f00;
+	opacity:1;
+	width:100%;
+	position:absolute;
+	top:0;
+	height:100%;
+}
+ 
+
+
+/*************************************************
+				INTRO-SPECIFIC STYLES
+*************************************************/
+
+#intro {
+	width:100%;
+	height:100%;
+	position:fixed;
+	top:0;
+	left:0;
+	
+	/* Stretch image to fill width & height of browser */
+	background-image:url('../img/bg1blank.png');
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-position:bottom;
+	/* Makes IE size correctly */
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/bg1blank.png', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/bg1blank.png', sizingMethod='scale')";
+}
+
+#introContents {
+	margin-top:15vh;
+	width:500px;
+	margin-left:-250px;
+	left:50%;
+	position:absolute;
+	opacity:1;
+}
+
+#introContents  h1.title {
+	font-size:20em;
+	font-size:45vh;
+
+	font-family: 'ADayWithoutSun', Tahoma, Arial, sans-serif;
+	line-height:100%;
+}
+
+#introContents h2.title {
+	font-family: 'Aaargh', Tahoma, Arial, sans-serif;
+	font-size:3.2em;
+	font-size:7vh
+}
+
+#introContents h3.title {
+	font-family: 'Quicksand', Tahoma, Arial, sans-serif;
+	font-size:2em;
+	font-size:5vh;
+	line-height:100%;
+	margin-top:-6vh;
+}
+
+
+#introContents h4.title a {
+	display:inline-block;
+	font-size:1.5em;
+	font-size:4vh;
+	line-height:100%;
+	
+	margin-top:2vh;
+	color:#3052b3;
+}
+
+#introContents h4.title a:first-child {
+	margin-right:10%;
+}
+
+
+#introContents h4.blurb {
+	opacity:0.6;
+}
+
+#introContents h4.title a:hover {
+	color:#9890ff;
+	transition:color 0.2s;
+}
+
+#introBorder, .cloudBorder, .cloudBorderTop {
+	background-image:url('../img/cloudBorder.png');
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-position:bottom;
+	/* Makes IE size correctly */
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/cloudBorder.png', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/cloudBorder.png', sizingMethod='scale')";
+	width:100%;
+	height:169px;
+	position:absolute;
+	top:100%;
+	margin-top:-100px;
+}
+
+.cloudBorderTop, .cloudBorder {
+	position:relative;
+	margin-top:0;
+}
+
+.cloudBorder {
+	
+	margin-top:-70px;
+	margin-bottom:50px;
+	transform: scaleY(-1);
+	-moz-transform: scaleY(-1);
+	-o-transform: scaleY(-1);
+	-webkit-transform: scaleY(-1);
+	filter: FlipV;
+	-ms-filter: "FlipV";	
+}
+
+.texBG {
+	background:none;
+}
+
+
+/*************************************************
+			THUMBS-SPECIFIC STYLES
+*************************************************/
+.workThumbs a {
+	color:#d2faff;
+	font-family: 'Quicksand', Tahoma, Arial, sans-serif;
+	font-weight:100;
+	-webkit-transition: color 0.2s;
+	transition: color 0.2s;
+	text-shadow: 1px 1px 1px #37eaff;
+}
+
+.workThumbs a:hover {
+	color:#fff;
+}
+.workThumbs img {
+	opacity:0.85;
+	-webkit-transition: opacity 0.2s;
+	transition: opacity 0.2s;
+}
+
+.workThumbs img:hover {
+	opacity:1;
+}
+
+.workThumbs h3 {
+	font-weight:600;
+	text-transform:uppercase;
+}
+
+
+/*************************************************
+				WORKS-SPECIFIC STYLES
+*************************************************/
+
+.work #introContents {
+	width:100%;
+	margin-left:0px;
+	left:0;
+	position:relative;
+}
+
+
+.work #intro h2 {
+	margin-top:0;
+	font-size:1em;
+	color:#fff;
+	font-family:'Quicksand', Tahoma, sans-serif;
+	background-image:url('../img/siege/blurb.png');
+	background-size: 100% 100%;
+	-webkit-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	/* Makes IE size correctly */
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/siege/blurb.png', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/siege/blurb.png', sizingMethod='scale')";
+	opacity:0.6;
+	width:60%;
+	padding:20px 0;
+	margin:0 auto;
+}
+
+.work #intro img {
+	display:block;
+	width:50%;
+	margin:0 auto;
+	left:0;
+	display:absolute;
+}
+
+.work h2 {
+	margin-bottom:0.5em;
+}
+
+
+.col {
+	width:31%;
+	margin-left:3%;
+	float:left;
+	margin-bottom:15px;
+	font-size:0.8em;
+}
+
+.col h3 {
+	margin:0;
+	font-size:1.3em;
+}
+
+.blurb {
+	background-image:url('../img/blurb.png');
+	background-repeat:no-repeat;
+	background-size: 100% 100%;
+	-webkit-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	-o-background-size:  100% 100%;
+	/* Makes IE size correctly */
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/blurb.png', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/blurb.png', sizingMethod='scale')";
+	padding:10px;
+	padding-bottom:20px;
+	box-sizing:border-box;
+}
+
+.work .col .blurb {
+	opacity:0.6;
+}
+
+
+.work h3 {
+	font-family:'Quicksand', Tahoma, Arial, sans-serif;
+	text-transform:uppercase;
+	font-size:1em;
+}
+
+div .col:first-child {
+	margin-left:0;
+}
+
+.work .texBG {
+	color:#fff;
+}
+
+
+@media only screen and (max-width: 1000px) {
+	.work #intro img {
+		width:80%;
+		margin:0 auto;
+	}
+	.work #intro h2 {
+		width:100%;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.work .col {
+		width:100%;
+		float:none;
+		margin:0;
+	}
+}
+
+
+
+/*************************************************
+				SIEGE-SPECIFIC STYLES
+*************************************************/
+
+
+.siege #intro {
+	background-image:url('../img/bg1blankRed.png');
+	/* Makes IE size correctly */
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/bg1blankRed.png', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/bg1blankRed.png', sizingMethod='scale')";
+}
+
+.siege .col .blurb {
+	background-image:url('../img/siege/blurb.png');
+	/* Makes IE size correctly */
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/siege/blurb.png', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/siege/blurb.png', sizingMethod='scale')";
+}
+
+.siege #intro h2 {
+	background-image:url('../img/siege/blurb.png');
+}
+
+.siege {
+	color:#BF8C58;
+}
+
+.siege h2, .siege h3 {
+	color:#8F0000;
+}
+
+/*************************************************
+				NOVELLA-SPECIFIC STYLES
+*************************************************/
+
+
+.novella #intro {
+	padding-top:10vh;
+	background-image:url('../img/bg1blankPurple.png');
+	/* Makes IE size correctly */
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/bg1blankPurple.png', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/bg1blankPurple.png', sizingMethod='scale')";
+}
+
+.novella .col .blurb {
+	background-image:url('../img/novella/blurb.png');
+	/* Makes IE size correctly */
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/novella/blurb.png', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../novella/siege/blurb.png', sizingMethod='scale')";
+}
+
+.novella #intro h2 {
+	background-image:url('../img/novella/blurb.png');
+}
+
+
+.novella h2, .novella h3 {
+	color:#372440;
+}
+
+
+
+
+/*************************************************
+				INDA-SPECIFIC STYLES
+*************************************************/
+
+
+.inda #intro {
+	background-image:url('../img/bg1blankOrange.png');
+	/* Makes IE size correctly */
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/bg1blankRed.png', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/bg1blankRed.png', sizingMethod='scale')";
+}
+
+.inda .col .blurb {
+	background-image:url('../img/inda/blurb.png');
+	/* Makes IE size correctly */
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/inda/blurb.png', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/inda/blurb.png', sizingMethod='scale')";
+}
+
+.inda #intro h2 {
+	background-image:url('../img/inda/blurb.png');
+}
+
+.inda {
+	color:#BF8C58;
+}
+
+.inda h2, .inda h3 {
+	color:#722600;
+}
+
+.inda a {
+	color:#ff9c00;
+}
+
+.inda a:hover {
+	color:#b4781a;
+}
+
+
+
+/*************************************************
+				ABOUT-SPECIFIC STYLES
+*************************************************/
+
+#about h1 {
+	margin-left:45%;
+}
+
+/*************************************************
+				GALLERY-SPECIFIC STYLES
+*************************************************/
+.slider {
+	 overflow:hidden; /* Delete me to show thumbs */ 
+	background-image:url('../img/ipadFrameLong.png');
+	background-repeat:no-repeat;
+	background-size: contain;
+	-webkit-background-size: contain;
+	-moz-background-size:contain;
+	-o-background-size: contain;
+	/* Makes IE size correctly */
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/ipadFrameLong.png', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/ipadFrameLong.png', sizingMethod='scale')";
+	max-width:1500px;
+	padding-left:8%;
+	padding-top:4%;
+	margin-top:30px;
+}
+
+.slider ul {
+	-webkit-padding-start: 0px;
+	-webkit-margin-after: 0px;
+	-webkit-margin-before: 0px;
+}
+
+.shortDevice {
+	background-image:url('../img/ipadFrame.png');
+	/* Makes IE size correctly */
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/ipadFrame.png', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/ipadFrame.png', sizingMethod='scale')";
+}
+
+.slider .img {
+	width:100%;
+}
+
+.flexslider {
+	border:none;
+	overflow:hidden; 
+	width:91.5%; 
+	background:none;
+	height:100%;
+	-webkit-box-shadow:none;
+	box-shadow:none;
+}
+
+.flex-viewport {
+	border:3px solid #222;
+	-webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+}
+
+
+.flex-control-nav  {
+	position:relative;
+	bottom:-0.2em;
+}
+
+.flexslider a  {
+	color:rgba(0, 0, 0, 0.8);
+}
+
+.flexslider a:hover {
+	color:rgba(0, 0, 0, 0.9);
+}
+
+
+.flex-control-paging li a {
+	background-color:#bbb;
+}
+
+.flex-control-paging li a.flex-active {
+	background-color:#666;
+}
+
+.flex-control-paging li a:hover {
+	background-color:#fff;
+}
+
+.texBG .contents {
+	width:65%;
+}
+
+@media only screen and (max-width: 600px) {
+	.flex-control-nav  {
+		bottom:0em;
+	}
+}
+
+/*************************************************
+				COPYRIGHT + BACK
+*************************************************/
+
+.copyright {
+	font-size:0.8em;
+}
+
+section.copyright  {
+	padding:0;
+	padding-bottom:20px;
+}
+
+a.back {
+	font-family: 'Quicksand', Tahoma, Arial, sans-serif;
+	text-transform:uppercase;
+	font-weight:bold;
+	position:fixed;
+	top:10px;
+	left:10px;
+	color:#fff;
+	text-shadow:1px 1px 8px #000;
+}
+
+a.back:hover {
+	color:#333;
+	text-shadow:1px 1px 8px #000;
+	-webkit-transition:color 0.2s, text-shadow 0.2s;
+	transition:color 0.2s, text-shadow 0.2s;
+}
+
+
+/*************************************************
+				RESPONSIVE TABLET
+*************************************************/
+
+@media only screen and (max-width: 900px) {
+	body {
+		background-color:#eee;
+	}
+	
+	h1 {
+		font-size:4em;
+	}
+	
+	.sideImage {
+		float:none;
+		width:60%;
+		margin:0 20%;
+	}
+	
+	.texBG .contents, .contents  {
+		width:90%;
+	}
+	.rightText, #about h1 {
+		margin-left:0;
+	}
+}
+
+/*************************************************
+				RESPONSIVE MOBILE
+*************************************************/
+
+@media only screen and (max-width: 500px) {
+	#introContents {
+		width:100%;
+	}
+	h1.title {	
+		font-size:55vw;
+	}
+	h2.title {
+		font-size:9vw;
+	}
+	h3.title {
+		font-size:6vw;
+	}
+}

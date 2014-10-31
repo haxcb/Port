@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Hasiba Arshad | Portfolio</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		
+		<link rel="stylesheet" href="js/FlexSlider/flexslider.css" type="text/css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/fonts.css" />	
+		
+		<script src="js/jquery-1.9.0.js"></script>
+		<!-- Resets -->
+		<script src="js/html5shiv.js"></script>
+
+		<!-- Custom -->
+		<script src="js/scripts.js"></script>
+		
+	</head>
+	<body class="novella work">
+		<div id="intro" data-scroll="white">
+			<div id="introContents" data-scroll="down">
+				<img src="img/novella/logo.png" />
+				<h2 class="title">A learning management system prototype</h3>
+			</div>
+		</div>
+		
+		<div id="introBorder"></div>
+		
+		<section class="start">
+			<div class="contents">
+				<hr />
+				<h2 class="center">Overview</h2>
+				<div class="center">
+					<span>Novella is a mobile application that facilitates the exchange of educational content within an institution.</span>
+					<span>It is designed around a student perspective of what is needed in a learning management system.</span>
+				</div>
+				<hr />
+			</div>
+
+		</section>
+		
+		<section class="texBG">
+			<div class="cloudBorder"></div>
+			<div class="contents" data-scroll="white">
+				<h2 class="center">Student View Mockups</h2>
+				<div class="slider shortDevice">
+					<div class="flexslider">
+					  <ul class="slides">
+						<li>
+							<img src="img/novella/1.png" />
+						</li>
+						<li>
+							<img src="img/novella/2.png" />
+						</li>
+						<li>
+							<img src="img/novella/3.png" />
+						</li>
+						<li>
+							<img src="img/novella/4.png" />
+						</li>
+						<li>
+							<img src="img/novella/5.png" />
+						</li>
+					  </ul>
+					</div>
+				</div>
+				<h2 class="center">Instructor View Mockups</h2>
+				<div class="slider shortDevice">
+					<div class="flexslider">
+					  <ul class="slides">
+						<li>
+							<img src="img/novella/1p.png" />
+						</li>
+						<li>
+							<img src="img/novella/2p.png" />
+						</li>
+						<li>
+							<img src="img/novella/3p.png" />
+						</li>
+						<li>
+							<img src="img/novella/4p.png" />
+						</li>
+						<li>
+							<img src="img/novella/5p.png" />
+						</li>
+					  </ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<div class="cloudBorderTop"></div>
+		<section>
+			<div class="contents">
+				<hr />
+				<h2 class="center">Features</h2>
+				<div class="center">
+					<img src="img/novella/features.png" />
+					<span>Novella allows students to access course material, submit assignments, work on quizzes, participate in polls, and view their own grades.</span>
+					<span>The teacher's perspective of the app allows the teacher to facilitate and control the content that the student can access. Teachers may also take classroom attendance using the app.</span>
+				</div>
+				<hr />
+			</div>
+		</section>
+		
+		<section class="texBG">
+			<div class="cloudBorder"></div>
+			<div class="contents" data-scroll="white">
+				<div class="center">
+					<div class="col">
+						<h3>Roles</h3>
+						<div class="blurb">
+							<span>UI designer</span>
+							<span>UX designer</span>
+						</div>
+					</div>
+					<div class="col">
+						<h3>Tools</h3>
+						<div class="blurb">
+							<span>Adobe Photoshop</span>
+							<span>Angular.js</span>
+							<span>PhoneGap</span>
+							<span>GitHub</span>
+						</div>
+					</div>
+					<div class="col">
+						<h3>Comrades</h3>
+						<div class="blurb">
+							<span>Shery Sumal</span>
+							<span>Erik Ross</span>
+							<span>Daniel Chappell</span>
+							<span>Ellen Wong</span>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</section>
+		
+		<div class="cloudBorderTop"></div>
+		<section class="copyright">
+			<div class="contents">
+				<div class="center">&copy; <script>document.write(new Date().getFullYear());</script> Hasiba Arshad</div>
+			</div>
+		</section>
+		
+		<a href="index.html" class="back">&lt; Back</a>
+		
+		<!-- Scripts -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
+
+		<!-- FlexSlider -->
+		<script defer src="js/FlexSlider/jquery.flexslider.js"></script>
+
+		<script type="text/javascript">
+			$(window).load(function(){
+				$('.flexslider').flexslider({
+					animation: "slide",
+					start: function(slider){
+						$('body').removeClass('loading');
+					}
+				});
+			});
+		</script>
+
+	</body>
+</html>
