@@ -34,6 +34,7 @@ h2 {
 	color:#fff;
 	font-size:2.5em;
 	font-family:'Quicksand', Tahoma, Arial, sans-serif;
+	/* font-weight:700; */
 }
 
 
@@ -413,7 +414,11 @@ section.start {
 .work h3 {
 	font-family:'Quicksand', Tahoma, Arial, sans-serif;
 	text-transform:uppercase;
-	font-size:1em;
+	font-size:1.2em;
+	color:#fff;
+	font-weight:700;
+	text-shadow:1px 1px 8px #000;
+	-webkit-transition:color 0.2s, text-shadow 0.2s;
 }
 
 div .col:first-child {
@@ -472,7 +477,7 @@ div .col:first-child {
 	color:#BF8C58;
 }
 
-.siege h2, .siege h3 {
+.siege h2 {
 	color:#8F0000;
 }
 
@@ -501,9 +506,11 @@ div .col:first-child {
 }
 
 
-.novella h2, .novella h3 {
-	color:#372440;
+.novella h2 {
+	/* color:#563865; */
+	color:#372440; 
 }
+
 
 
 
@@ -535,7 +542,7 @@ div .col:first-child {
 	color:#BF8C58;
 }
 
-.inda h2, .inda h3 {
+.inda h2 {
 	color:#722600;
 }
 

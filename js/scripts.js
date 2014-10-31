@@ -59,12 +59,12 @@ $(document).ready(function() {
 			var opacity = 1 - scrolledAmount - Math.floor(scrolledAmount);
 			
 			// Start turning back into color after 1 full screen has been scrolled
-			if($window.scrollTop() > $(window).height()) {
+			if($window.scrollTop() > $(window).height() + 100) {
 				opacity = scrolledAmount - Math.floor(scrolledAmount) /2;
 			}
 			// Stay solid color after 2 screens of scrolling
 			if(Math.floor(scrolledAmount) > 1) {
-				opacity = 1;
+				// opacity = 1;
 			}		
 			return opacity;
 		};
@@ -79,6 +79,8 @@ $(document).ready(function() {
 	
 
 	
+
+	
 	$('*[data-scroll="down"]').each(function(){
 		// alert("Hi");
 		var $scrollEle = $(this); 
@@ -88,7 +90,7 @@ $(document).ready(function() {
 			
 			
 			if($window.scrollTop() > $(window).height()) {
-				yPos = -$(window).height();
+				yPos = -$(window).height()*2;
 			}
 			
 			$scrollEle.css({
