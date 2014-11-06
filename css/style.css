@@ -656,6 +656,52 @@ div .col:first-child {
 }
 
 /*************************************************
+			STORY GALLERY-SPECIFIC STYLES
+*************************************************/
+
+#about .flexslider {
+	overflow:visible;
+	box-shadow: none;
+}
+
+#about .flex-viewport {
+	border: none;
+}
+
+#about .slider {
+	overflow:visible; /* Delete me to show thumbs */ 
+	background-image:none;
+	filter: none;
+	-ms-filter: none;
+	margin-bottom:150px;
+}
+#about .flex-direction-nav li .flex-next {
+	right: -75px;
+}
+
+#about .flex-direction-nav li .flex-prev {
+	left: -75px;
+}
+
+#about .flex-direction-nav a  {
+	opacity: 1;
+	color:#ddd;
+}
+
+#about .flex-control-paging li a {
+	background-color:#ddd;
+}
+
+#about .flex-control-paging li a.flex-active {
+	background-color:#66f;
+}
+
+#about .flex-control-nav {
+	margin-bottom:-20px;
+}
+
+
+/*************************************************
 				COPYRIGHT + BACK
 *************************************************/
 

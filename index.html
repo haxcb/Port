@@ -5,7 +5,8 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
 		<link rel="stylesheet" type="text/css" href="css/fonts.css" />		
-		<link rel="stylesheet" type="text/css" href="css/jquery.ui.tooltip.min.css" />		
+		<link rel="stylesheet" type="text/css" href="css/jquery.ui.tooltip.min.css" />	
+		<link rel="stylesheet" href="js/FlexSlider/flexslider.css" type="text/css" media="screen" />		
 		<script src="js/jquery-1.9.0.js"></script>
 		<script src="js/html5shiv.js"></script>
 		<script src="js/jqueryui/jquery.ui.core.js"></script>
@@ -50,14 +51,27 @@
 			<div id="about" class="contents">
 				<a name="story"></a>
 				<hr />
-				<img class="sideImage" src="img/about.png" />
-				<h1>Once upon a time</h1>
-				<div class="rightText">
-					<span>there was a young lass named Hasiba. Her thirst for knowledge drove her to seek training from 
-							<a href="#" title="Simon Fraser University">King Simon's highly esteemed scholars.</a></span>
 
-					<span>Despite the various disciplines being taught, she quickly fell in love with the ways of the <a href="#" title="designer">healer</a> and the <a href="#" title="software engineer">alchemist.</a></span>
-					<span>With two disciplines at her disposal, she gained interest in <a href="#" title="game development">aiding young pages on their quests for knighthood.</a></span>
+				<div class="slider">
+					<div class="flexslider">
+					  <ul class="slides">
+						<li>
+							<img src="img/story/1.png" />
+						</li>
+						<li>
+							<img src="img/story/2.png" />
+						</li>
+						<li>
+							<img src="img/story/3.png" />
+						</li>
+						<li>
+							<img src="img/story/4.png" />
+						</li>
+						<li>
+							<img src="img/story/5.png" />
+						</li>
+					  </ul>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -104,5 +118,20 @@
 			</div>
 		</section>
 		
+		
+		<!-- FlexSlider -->
+		<script defer src="js/FlexSlider/jquery.flexslider.js"></script>
+
+		<script type="text/javascript">
+			$(window).load(function(){
+				$('.flexslider').flexslider({
+					animation: "slide",
+					slideshow: false,
+					start: function(slider){
+						$('body').removeClass('loading');
+					}
+				});
+			});
+		</script>
 	</body>
 </html>
