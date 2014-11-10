@@ -209,7 +209,7 @@ section.start {
 }
 
 #introContents {
-	margin-top:15vh;
+	margin-top:16vh;
 	min-width:500px; 
 	margin-left:-250px;
 	left:50%;
@@ -233,8 +233,9 @@ section.start {
 
 #introContents h3.title {
 	font-family: 'Quicksand', Tahoma, Arial, sans-serif;
-	font-size:2em;
-	font-size:5vh;
+	font-weight:bold;
+	font-size:1.6em;
+	font-size:4.5vh; 
 	line-height:100%;
 	margin-top:-6vh;
 }
@@ -243,20 +244,22 @@ section.start {
 #introContents h4.title a {
 	display:inline-block;
 	font-size:1.5em;
-	font-size:4vh;
+	font-size:3.5vh;
 	line-height:100%;
 	
 	margin-top:2vh;
 	color:#3052b3;
+	margin-right:10%;
 }
 
-#introContents h4.title a:first-child {
-	margin-right:10%;
+#introContents h4.title a:last-child {
+	margin-right:0;
 }
 
 
 #introContents h4.blurb {
 	opacity:0.6;
+	margin-top:2vh;
 }
 
 #introContents h4.title a:hover {
@@ -717,20 +720,88 @@ section.copyright  {
 a.back {
 	font-family: 'Quicksand', Tahoma, Arial, sans-serif;
 	text-transform:uppercase;
+	box-sizing:border-box;
 	font-weight:bold;
 	position:fixed;
-	top:10px;
-	left:10px;
-	color:#fff;
-	text-shadow:1px 1px 8px #000;
+	top:0;
+	left:0;
+	padding:10px;
+	padding-left:30px;
+	border-bottom:2px solid #eee;
+	opacity:0.6;
+/* 	top:20px;
+	left:30px; */
+	color:#888;
+	width:100%;
+	background-color:#fff;
+	/* background-color:#fff; */
+	/* border:3px #fff white; */
+	/* padding-left:17px; */
+	/* padding-top:10px; */
+	/* width:50px; */
+	/* height:50px; */
+	/* border-radius:50%; */
+	-webkit-transition:opacity 0.2s;
+	transition:opacity 0.2s;
 }
 
 a.back:hover {
-	color:#333;
-	text-shadow:1px 1px 8px #000;
-	-webkit-transition:color 0.2s, text-shadow 0.2s;
-	transition:color 0.2s, text-shadow 0.2s;
+	color:#555;
+	-webkit-transition:color 0.2s;
+	transition:color 0.2s;
+	opacity:0.8;
+	-webkit-transition:opacity 0.2s;
+	transition:opacity 0.2s;
+	/* text-shadow:1px 1px 8px #000; */
+	/* -webkit-transition:color 0.2s, text-shadow 0.2s; */
+	/* transition:color 0.2s, text-shadow 0.2s; */
+	
 }
+
+/*************************************************
+				NAV
+*************************************************/
+nav {
+	position:fixed;
+	top:-10px;
+	left:50%;
+	width:700px;
+	margin-left:-350px;
+}
+
+nav ul {
+	padding:0;
+	margin:0;
+	margin-left:130px;
+	margin-top:10px;
+}
+
+nav ul li {
+	padding:0;
+	margin:0;
+	float:left;
+	list-style-type:none;
+	margin-right:20px;
+	text-transform:uppercase;
+	font-size:.75em;
+	font-weight:normal;
+	font-family:'Quicksand';
+
+}
+/* nav ul li a {
+	color:#fff;
+	text-shadow:1px 1px 8px #000;
+} */
+
+#main nav {
+	width:450px;
+	margin-left:-225px;
+}
+
+#main nav ul {	
+	margin-left:95px;
+}
+
 
 
 /*************************************************
