@@ -100,7 +100,7 @@ $(document).ready(function() {
 			
 			
 			
-			if($window.scrollTop() > $(window).height()) {
+			if($window.scrollTop() > $(window).height()) {	
 				yPos = -$(window).height()*2;
 			}
 			
@@ -117,8 +117,12 @@ $(document).ready(function() {
 	});
 	
 	$(window).resize(function() {
-		if($(window).width() > 740 && $('nav .right').is(':hidden')) {
-			$('nav .right').show();
+		if($(window).width() > 740) {
+			if($('nav .right').css('float') == 'right') {
+				$('nav .right').show(); 
+			}
+		} else {
+			$('nav .right').hide();
 		}
 	});
 	
