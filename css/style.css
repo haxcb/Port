@@ -754,15 +754,15 @@ nav {
 	box-sizing:border-box;
 	font-weight:bold;
 	position:fixed;
-	z-index:10;
-	top:0;
+	z-index:20;
+	top:-9px;
 	left:0;
-	padding-top:7px;
+	padding-top:16px;
 	
 	opacity:0.9;
 
 	width:100%;
-	min-height:51px;
+	min-height:60px;
 
 	background-image:url('../img/behind2.png');
 	background-repeat:no-repeat;
@@ -848,6 +848,15 @@ nav #menuDrawer {
 
 
 @media only screen and (max-width: 740px) {
+	nav {
+		'background-size': '100%',
+		'-webkit-background-size': '100%',
+		'-moz-background-size':'100%',
+		'-o-background-size': '100%'
+		/* Makes IE size correctly */
+		filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/behind2.png', sizingMethod='scale');
+		-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/behind2.png', sizingMethod='scale')";		
+	}
 	nav #menuDrawer {
 		display:block;
 		width:30px;

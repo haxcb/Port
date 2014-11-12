@@ -113,7 +113,28 @@ $(document).ready(function() {
 	
 	$('#menuDrawer').on('click', function(e) {
 		e.preventDefault();
+		if($('nav .right').css('display') == 'none') {
+			console.log("MENU VISIBLE");
+			$('nav').css({			
+				'background-size': '100% 80px',
+				'-webkit-background-size': '100%  80px',
+				'-moz-background-size':'100%  80px',
+				'-o-background-size': '100%  80px'
+
+			});
+		} else {
+			console.log("MENU HIDDEN");
+			setTimeout(function() {
+				$('nav').css({
+					'background-size': '100%',
+					'-webkit-background-size': '100%',
+					'-moz-background-size':'100%',
+					'-o-background-size': '100%'
+				});
+			}, 300);
+		}
 		$('nav .right').slideToggle();
+
 	});
 	
 	$(window).resize(function() {
