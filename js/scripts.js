@@ -55,13 +55,24 @@ $(document).ready(function() {
 		// $scrollEle.append($cover);
 		
 		var calculateOpacity = function() {
-			var scrolledAmount = $window.scrollTop() / $(window).height()
-			var opacity = 1 - scrolledAmount - Math.floor(scrolledAmount);
+			var scrolledAmount = $window.scrollTop() / $(window).height();
+			var opacity = 1 - scrolledAmount - Math.floor(scrolledAmount); // Fade out
 			
 			// Start turning back into color after 1 full screen has been scrolled
-			if($window.scrollTop() > $(window).height() + 100) {
+			
+			console.log($window.scrollTop());
+			if($window.scrollTop() > $(window).height() + 100) { // Normal
 				opacity = scrolledAmount - Math.floor(scrolledAmount) /2;
+				console.log("hit");
 			}
+			
+			// Show the down link only as long as we haven't scrolled past 1/3 of the screen height
+			if($window.scrollTop() >= $(window).height()/3) {
+				$('.downLink').hide();
+			} else {
+				$('.downLink').show();
+			}
+			
 			// Stay solid color after 2 screens of scrolling
 			if(Math.floor(scrolledAmount) > 1) {
 				// opacity = 1;
@@ -98,6 +109,7 @@ $(document).ready(function() {
 			});
 		});
 	});
+
 
 	
 
