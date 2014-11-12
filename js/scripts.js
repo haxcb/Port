@@ -110,7 +110,18 @@ $(document).ready(function() {
 		});
 	});
 
-
+	
+	$('#menuDrawer').on('click', function(e) {
+		e.preventDefault();
+		$('nav .right').slideToggle();
+	});
+	
+	$(window).resize(function() {
+		if($(window).width() > 740 && $('nav .right').is(':hidden')) {
+			$('nav .right').show();
+		}
+	});
+	
 	
 
 });
