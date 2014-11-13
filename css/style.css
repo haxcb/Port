@@ -83,6 +83,13 @@ img {
 	clear:both;
 }
 
+
+.absTop {
+	position:absolute;
+	top:0;
+}
+
+
 hr {
 	border:none;
 	background-image:url('../img/hr.png');
@@ -675,12 +682,6 @@ div .col:first-child {
 			STORY GALLERY-SPECIFIC STYLES
 *************************************************/
 
-.absTop {
-	position:absolute;
-	top:0;
-}
-
-
 #about .flexslider {
 	overflow:visible;
 	box-shadow: none;
@@ -770,15 +771,15 @@ nav {
 	width:100%;
 	min-height:60px;
 
-	background-image:url('../img/behind2.png');
+	background-image:url('../img/behind.png');
 	background-repeat:no-repeat;
 	background-size: 100% 100%;
 	-webkit-background-size: 100% 100%;
 	-moz-background-size:100% 100%;
 	-o-background-size: 100% 100%;
 	/* Makes IE size correctly */
-	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/behind2.png', sizingMethod='scale');
-	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/behind2.png', sizingMethod='scale')";
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/behind.png', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/behind.png', sizingMethod='scale')";
 
 	/* -webkit-transition:opacity 0.3s; */
 	/* transition:opacity 0.3s; */
@@ -853,21 +854,23 @@ nav #menuDrawer {
 }
 
 
-@media only screen and (max-width: 740px) {
+@media only screen and (max-width: 760px) {
 	nav {
 		'background-size': '100%',
 		'-webkit-background-size': '100%',
 		'-moz-background-size':'100%',
 		'-o-background-size': '100%'
 		/* Makes IE size correctly */
-		filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/behind2.png', sizingMethod='scale');
-		-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/behind2.png', sizingMethod='scale')";		
+		filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/behind.png', sizingMethod='scale');
+		-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/behind.png', sizingMethod='scale')";		
 	}
+	
 	nav #menuDrawer {
 		display:block;
-		width:30px;
+		width:36px;
 		height:30px;
-		background-color:#f00;
+		background-image:url('../img/burger.png');
+		background-repeat:no-repeat;
 		margin:0 30px;
 		float:right;
 	}
@@ -941,10 +944,9 @@ a.downLink {
 
 /* Standard syntax */
 @keyframes pulseDown {
-    0% {margin-top:5vh;opacity:1;}
-    33% {margin-top: 7vh;opacity:1;}
-    66% {margin-top: 7vh;opacity:0;}
-    100% {opacity:0;margin-top:5vh;}
+    0% {margin-top:1vh;opacity:0;}
+    50% {margin-top: 6vh;opacity:1;}
+    100% {margin-top:7vh;opacity:0;}
 }
 
 
