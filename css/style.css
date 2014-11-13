@@ -675,6 +675,12 @@ div .col:first-child {
 			STORY GALLERY-SPECIFIC STYLES
 *************************************************/
 
+.absTop {
+	position:absolute;
+	top:0;
+}
+
+
 #about .flexslider {
 	overflow:visible;
 	box-shadow: none;
@@ -906,6 +912,12 @@ img.down {
 	margin-left:-95px;
 	margin-left:-15vh;
 	width:30vh;	
+	-webkit-animation: pulseDown 1.5s;
+	animation: pulseDown 1.5s;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-webkit-animation-timing-function: ease-in-out;
+	animation-timing-function: ease-in-out;
 }
 
 a.downLink {
@@ -919,6 +931,21 @@ a.downLink {
 	height:20vh;
 	display:block;
 } 
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes pulseDown {
+    0% {margin-top:1vh;opacity:0;}
+    50% {margin-top: 6vh;opacity:1;}
+    100% {margin-top:7vh;opacity:0;}
+}
+
+/* Standard syntax */
+@keyframes pulseDown {
+    0% {margin-top:5vh;opacity:1;}
+    33% {margin-top: 7vh;opacity:1;}
+    66% {margin-top: 7vh;opacity:0;}
+    100% {opacity:0;margin-top:5vh;}
+}
 
 
 
