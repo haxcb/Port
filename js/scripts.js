@@ -37,8 +37,35 @@ $(document).ready(function() {
 		};
 		
 		$(window).scroll(function() {	
+			
+			// Change Opacity
 			$scrollEle.css({ opacity: calculateOpacity() });
+			
+			// Enable/disable scroll to top button
+			if($window.scrollTop() >= $(window).height()/3) {
+				if($('.backToTop').is(':hidden')) {
+					$('.backToTop').fadeIn();
+				} 
+			} else {
+				if($('.backToTop').is(':visible')) {
+					$('.backToTop').fadeOut();
+				} 
+			}
 		});
+		
+		$('.backToTop').mouseenter(function() {
+			$(this).animate({
+				paddingTop:"10",
+				opacity:"1"
+			}, 200);
+		});		
+		$('.backToTop').mouseout(function() {
+			$(this).animate({
+				paddingTop:"0",
+				opacity:"0.7"
+			}, 200);
+		});
+		
 		$(window).resize(function(e) {
 			$scrollEle.css({ opacity: calculateOpacity() });
 		});
