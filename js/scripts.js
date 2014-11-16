@@ -111,7 +111,6 @@ $(document).ready(function() {
 				'-webkit-background-size': '100%  80px',
 				'-moz-background-size':'100%  80px',
 				'-o-background-size': '100%  80px'
-
 			});
 		} else {
 			console.log("MENU HIDDEN");
@@ -131,11 +130,19 @@ $(document).ready(function() {
 	$(window).resize(function() {
 		if($(window).width() > 740) {
 			if($('nav .right').css('float') == 'right') {
-				$('nav .right').show(); 
+				$('nav .right').show();
+				console.log("float right");			
 			}
 		} else {
 			$('nav .right').hide();
+			console.log("collapse");
 		}
+		$('nav').css({
+			'background-size': '100% 100%',
+			'-webkit-background-size': '100% 100%',
+			'-moz-background-size':'100% 100%',
+			'-o-background-size': '100% 100%'
+		});	
 	});
 	
 	
