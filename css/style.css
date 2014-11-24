@@ -99,7 +99,7 @@ img {
 	font-size:0.9em;
 	font-weight:normal;
 	display:inline-block;
-	border:1px solid #999;
+	border:1px solid #bbb;
 	margin:0 auto;
 	padding:15px 20px;
 	text-align:center;
@@ -176,12 +176,15 @@ hr {
 
 a, a:active, a:visited {
 	text-decoration:none;
-	color:#88f;
+	color:#66f;
 	font-weight:bold;
+	-webkit-transition:color 0.3s;
+	-moz-transition:color 0.3s;
+	transition:color 0.3s;
 }
 
 a:hover {
-	color:#ccf;
+	color:#22a;
 }
 
 
@@ -229,17 +232,7 @@ section.start {
 	position:fixed;
 	top:0;
 	left:0;
-	
-	/* Stretch image to fill width & height of browser */
-	background-image:url('../img/bg1blank.png');
-	background-size: cover;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-position:bottom;
-	/* Makes IE size correctly */
-	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/bg1blank.png', sizingMethod='scale');
-	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/bg1blank.png', sizingMethod='scale')";
+	background-image:url('../img/tile.png');
 }
 
 #introContents {
@@ -350,7 +343,6 @@ section.start {
 	font-weight:100;
 	-webkit-transition: color 0.2s;
 	transition: color 0.2s;
-	text-shadow: 1px 1px 1px #37eaff;
 }
 
 .workThumbs a:hover {
@@ -403,7 +395,7 @@ section.start {
 	margin:0 auto;
 }
 
-.work #intro img {
+.work #intro img.logo{
 	display:block;
 	width:50%;
 	margin:0 auto;
@@ -435,7 +427,7 @@ section.start {
 .col h3 {
 	margin:0;
 	font-size:1.3em;
-	font-family:'Quicksand', Tahoma, Arial, sans-serif;
+	font-family:'Raleway', Tahoma, Arial, sans-serif;
 	text-transform:uppercase;
 }
 
@@ -460,13 +452,15 @@ section.start {
 
 
 .work h3 {
-	font-family:'Quicksand', Tahoma, Arial, sans-serif;
+	font-family:'Raleway', Tahoma, Arial, sans-serif;
 	text-transform:uppercase;
 	font-size:1.2em;
 	color:#fff;
-	font-weight:700;
-	text-shadow:1px 1px 8px #000;
-	-webkit-transition:color 0.2s, text-shadow 0.2s;
+/* 	font-weight:700;
+	text-shadow:1px 1px 8px #000; */
+	/* -webkit-transition:color 0.2s, text-shadow 0.2s; */
+	-webkit-transition:color 0.2s;
+	transition:color 0.2s;
 }
 
 div .col:first-child {
@@ -479,7 +473,7 @@ div .col:first-child {
 
 
 @media only screen and (max-width: 1000px) {
-	.work #intro img {
+	.work #intro img.logo {
 		width:80%;
 		margin:0 auto;
 	}
@@ -505,10 +499,7 @@ div .col:first-child {
 
 
 .siege #intro {
-	background-image:url('../img/bg1blankRed.png');
-	/* Makes IE size correctly */
-	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/bg1blankRed.png', sizingMethod='scale');
-	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/bg1blankRed.png', sizingMethod='scale')";
+	background-image:url('../img/siege/tile.png');
 }
 
 .siege .col .blurb {
@@ -537,10 +528,10 @@ div .col:first-child {
 
 .novella #intro {
 	padding-top:10vh;
-	background-image:url('../img/bg1blankPurple.png');
+	background-image:url('../img/novella/tile.png');
 	/* Makes IE size correctly */
-	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/bg1blankPurple.png', sizingMethod='scale');
-	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/bg1blankPurple.png', sizingMethod='scale')";
+/* 	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/bg1blankPurple.png', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/bg1blankPurple.png', sizingMethod='scale')"; */
 }
 
 .novella .col .blurb {
@@ -570,10 +561,10 @@ div .col:first-child {
 
 
 .inda #intro {
-	background-image:url('../img/bg1blankOrange.png');
+	background-image:url('../img/inda/tile.png');
 	/* Makes IE size correctly */
-	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/bg1blankRed.png', sizingMethod='scale');
-	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/bg1blankRed.png', sizingMethod='scale')";
+/* 	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/bg1blankRed.png', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/bg1blankRed.png', sizingMethod='scale')"; */
 }
 
 .inda .col .blurb {
@@ -641,6 +632,7 @@ div .col:first-child {
 	margin:10px auto;
 	display:inline-block;
 	color:#777;
+	
 	border-bottom:1px solid #bbb;
 	font-weight:normal;
 }
@@ -884,6 +876,10 @@ section.copyright  {
 	display:none;
 }
 
+.siege .backToTop {
+	background-image:url('../img/siege/top.png');
+}
+
 a .backToTop {
 	opacity:0.7;
 }
@@ -935,6 +931,13 @@ nav {
 
 	/* -webkit-transition:opacity 0.3s; */
 	/* transition:opacity 0.3s; */
+}
+
+.siege nav {
+	background-image:url('../img/siege/behind.png');
+	/* Makes IE size correctly */
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/siege/behind.png', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/siege/behind.png', sizingMethod='scale')";
 }
 
 nav:hover {
@@ -1006,7 +1009,7 @@ nav #menuDrawer {
 }
 
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 990px) {
 	nav {
 		'background-size': '100%',
 		'-webkit-background-size': '100%',
@@ -1015,6 +1018,12 @@ nav #menuDrawer {
 		/* Makes IE size correctly */
 		filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/behind.png', sizingMethod='scale');
 		-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/behind.png', sizingMethod='scale')";		
+	}
+	
+	.siege nav {
+		/* Makes IE size correctly */
+		filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/siege/behind.png', sizingMethod='scale');
+		-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/siege/behind.png', sizingMethod='scale')";				
 	}
 	
 	nav #menuDrawer {
@@ -1045,6 +1054,14 @@ nav #menuDrawer {
 		filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/behind2.png', sizingMethod='scale');
 		-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/behind2.png', sizingMethod='scale')";
 	}
+	
+	.siege nav .right {
+		background-image:url('../img/siege/behind2.png');
+		/* Makes IE size correctly */
+		filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/siege/behind2.png', sizingMethod='scale');
+		-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/siege/behind2.png', sizingMethod='scale')";
+	}
+	
 	nav .right .left {
 		float:none;
 		text-align:center;
