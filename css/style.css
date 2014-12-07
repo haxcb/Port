@@ -391,13 +391,20 @@ section.start {
 	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/siege/blurb.png', sizingMethod='scale')";
 	opacity:0.6;
 	width:60%;
-	padding:20px 0;
+	padding:3vh 0;
 	margin:0 auto;
+	
+	font-family: 'Quicksand', Tahoma, Arial, sans-serif;
+	font-weight:bold;
+	font-size:1.6em;
+	font-size:3.5vh; 
+	line-height:100%;
 }
 
 .work #intro img.logo{
 	display:block;
 	width:50%;
+	width:100vh;
 	margin:0 auto;
 	left:0;
 	display:absolute;
@@ -471,10 +478,19 @@ div .col:first-child {
 	color:#fff;
 }
 
+.work h2 {
+	color:#999;
+}
+
+.work .texBG h2 {
+	color:#fff;
+}
+
 
 @media only screen and (max-width: 1000px) {
 	.work #intro img.logo {
 		width:80%;
+		width:100vh;
 		margin:0 auto;
 	}
 	.work #intro h2 {
@@ -513,14 +529,16 @@ div .col:first-child {
 	background-image:url('../img/siege/blurb.png');
 }
 
-.siege {
-	color:#BF8C58;
-}
+/* .siege h2 {
 
-.siege h2 {
-	color:#8F0000;
+	padding:20px 0;
+	opacity:0.8;
+	background-image:url('../img/siege/blurb.png');
+	background-repeat:none;
+	background-size:100% 100%;
+	-webkit-background-size:100% 100%;
 }
-
+ */
 /*************************************************
 				NOVELLA-SPECIFIC STYLES
 *************************************************/
@@ -548,7 +566,7 @@ div .col:first-child {
 
 .novella h2 {
 	/* color:#563865; */
-	color:#372440; 
+	/* color:#372440;  */
 }
 
 
@@ -579,20 +597,20 @@ div .col:first-child {
 }
 
 .inda {
-	color:#BF8C58;
+	/* color:#BF8C58; */
 }
 
 .inda h2 {
-	color:#722600;
+	/* color:#722600; */
 }
 
-.inda a {
+/* .inda a {
 	color:#ff9c00;
 }
 
 .inda a:hover {
 	color:#b4781a;
-}
+} */
 
 
 
@@ -940,6 +958,13 @@ nav {
 	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/siege/behind.png', sizingMethod='scale')";
 }
 
+.inda nav {
+	background-image:url('../img/inda/behind.png');
+	/* Makes IE size correctly */
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/inda/behind.png', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/inda/behind.png', sizingMethod='scale')";
+}
+
 nav:hover {
 /* 	opacity:0.6; 
 	-webkit-transition:opacity 0.3s;
@@ -1062,6 +1087,13 @@ nav #menuDrawer {
 		-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/siege/behind2.png', sizingMethod='scale')";
 	}
 	
+	.inda nav .right {
+		background-image:url('../img/inda/behind2.png');
+		/* Makes IE size correctly */
+		filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/inda/behind2.png', sizingMethod='scale');
+		-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/inda/behind2.png', sizingMethod='scale')";
+	}
+	
 	nav .right .left {
 		float:none;
 		text-align:center;
@@ -1103,6 +1135,9 @@ a.downLink {
 	height:20vh;
 	display:block;
 } 
+.work a.downLink {
+	bottom:2vh;
+}
 
 /* Chrome, Safari, Opera */
 @-webkit-keyframes pulseDown {
