@@ -5,41 +5,15 @@ $(document).ready(function() {
 	/*************************************
 		Opacity parallax
 	*************************************/
-	$('*[data-scroll="white"]').each(function(){
-		var $scrollEle = $(this); 
+
 		
-		// $scrollEle.css({position:'relative'}); // Messes up the spacing on everything
-		
-		var $cover = $('<div class="whiteCover"></div>');
-		// $scrollEle.append($cover);
-		
-		var calculateOpacity = function() {
-			var scrolledAmount = $window.scrollTop() / $(window).height();
-			var opacity = 1 - scrolledAmount - Math.floor(scrolledAmount); // Fade out
+		$(window).scroll(function() {	
 			
-			// Start turning back into color after 1 full screen has been scrolled			
-			if($window.scrollTop() > $(window).height() + 100) { // Normal
-				opacity = scrolledAmount - Math.floor(scrolledAmount) /2;
-			}
-			
-			// Show the down link only as long as we haven't scrolled past 1/3 of the screen height
 			if($window.scrollTop() >= $(window).height()/3) {
 				$('.downLink').hide();
 			} else {
 				$('.downLink').show();
 			}
-			
-			// Stay solid color after 2 screens of scrolling
-			if(Math.floor(scrolledAmount) > 1) {
-				// opacity = 1;
-			}		
-			return opacity;
-		};
-		
-		$(window).scroll(function() {	
-			
-			// Change Opacity
-			$scrollEle.css({ opacity: calculateOpacity() });
 			
 			// Enable/disable scroll to top button
 			if($window.scrollTop() >= $(window).height()/3) {
@@ -55,21 +29,24 @@ $(document).ready(function() {
 		
 		$('.backToTop').mouseenter(function() {
 			$(this).animate({
-				paddingTop:"10",
+				marginBottom:"8",
 				opacity:"1"
 			}, 200);
 		});		
 		$('.backToTop').mouseout(function() {
 			$(this).animate({
-				paddingTop:"0",
+				marginBottom:"0",
 				opacity:"0.7"
 			}, 200);
 		});
 		
 		$(window).resize(function(e) {
-			$scrollEle.css({ opacity: calculateOpacity() });
+			if($window.scrollTop() >= $(window).height()/3) {
+				$('.downLink').hide();
+			} else {
+				$('.downLink').show();
+			}
 		});
-	});
 	
 
 	

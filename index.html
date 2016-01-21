@@ -3,7 +3,7 @@
 	<head>
 		<title>Hasiba | Portfolio</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-		<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+		<!-- <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'> -->
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
 		<link rel="stylesheet" type="text/css" href="css/fonts.css" />		
 		<link rel="stylesheet" type="text/css" href="css/jquery.ui.tooltip.min.css" />	
@@ -15,34 +15,12 @@
 		<script src="js/jqueryui/jquery.ui.position.js"></script>
 		<script src="js/jqueryui/jquery.ui.tooltip.js"></script>
 		<script src="js/scripts.js"></script>
-		<script>
-			
-			$(function() {
-				$(document).tooltip({
-					show: { effect: "fadeIn", duration: 200 },
-					position: {
-						my: "center bottom-20",
-						at: "center top",
-						using: function( position, feedback ) {
-							$( this ).css( position );
-							$( "<div>" )
-								.addClass( "arrow" )
-								.addClass( feedback.vertical )
-								.addClass( feedback.horizontal )
-								.appendTo( this );
-						}
-					},
-					track: true
-				});
-			});
-	
-		</script>
+
 	</head>
 	<body id="main">
-		<a class="absTop" name="top"></a>
 		<nav>
 			<div class="left">
-				<a href="#top" class="back"></a>
+				<a href="/" class="back"></a>
 			</div>
 			<a href="#" id="menuDrawer"></a>
 			<div class="right">
@@ -111,56 +89,50 @@
 		
 		<section class="workThumbs">
 
-			<div class="contents" data-scroll="white" >
+			<div data-scroll="white" >
 				<a class="absTop" name="work"></a>
-				<h2 class="center">Work</h2>
-				<div class="center">
-					<div class="col">
-						<a href="siege.html">
-							<div class="">
-								<img src="img/siege/thumb.png" />
-							</div>
-							<h3>Siege of the Towers</h3>
-						</a>
-					</div>
-					<div class="col">
-						<a href="inda.html">
-							<div class="">
-								<img src="img/inda/thumb.png" />
-							</div>
-							<h3>Inda Relationship Visualizer</h3>
-						</a>
-					</div>
-					<div class="col">
-						<a href="novella.html">
-							<div class="">
-								<img src="img/novella/thumb.png" />
-							</div>
-							<h3>Novella</h3>
-						</a>
-					</div>
+				<h1>My Works</h1>
+				<div class="works">
+
+					<a class="col" href="siege.html">
+						<img src="images/thumb_louvre.png" />
+					</a>
+
+					<a class="col" href="inda.html">
+						<img src="images/thumb_natgeo.png" />
+					</a>
+
+					<a class="col" href="novella.html">
+						<img src="images/thumb_natgeo.png" />
+					</a>
+					
+					<a class="col" href="novella.html">
+						<img src="images/thumb_louvre.png" />
+					</a>
 					<div class="clear"></div>
 				</div>
 			</div>
 		</section>
 		
-		<div class="cloudBorderTop"></div>
+
 		<section class="copyright">
 			<div class="contents">
 				<a class="absTop" name="contact"></a>
-				<hr />
-				<h2 class="center">Let's Chat</h2>
-				<div class="center">Get in touch with me if you like what I do.</div>
+				<h1>Let's Chat</h1>
+				<p class="center">I’m currently studying at Simon Fraser University in Vancouver, Canada, and am seeking internships for summer 2016. Get in touch with me if you like what I do. </p>
+				<p class="center"> You can reach me directly via <a target="_blank" href="mailto:hasiba.arshad@gmail.com">email</a> or <a class="col4" target="_blank" href="http://ca.linkedin.com/pub/hasiba-arshad/2b/a78/238/">LinkedIn.</a></p>
+				<div class="center"><a target="_blank" href="Resume140601.pdf">Download CV/Resume</a></div>
 				<div class="links">
-					<a class="col4" target="_blank" href="mailto:hasiba_arshad@hotmail.com"><img src="img/contactEmail.png" /></a>
-					<a class="col4" target="_blank" href="http://facebook.com/haxcb"><img src="img/contactFB.png" /></a>
-					<a class="col4" target="_blank" href="http://twitter.com/haxcb"><img src="img/contactTwitter.png" /></a>
-					<a class="col4" target="_blank" href="http://ca.linkedin.com/pub/hasiba-arshad/2b/a78/238/"><img src="img/contactLinkedIn.png" /></a>
+					<a class="col4" target="_blank" href="mailto:hasiba.arshad@gmail.com"><img src="images/icon_email.png" /></a>
+					<a class="col4" target="_blank" href="http://ca.linkedin.com/pub/hasiba-arshad/2b/a78/238/"><img src="images/icon_linkedin.png" /></a>
+					<a class="col4" target="_blank" href="http://facebook.com/haxcb"><img src="images/icon_fb.png" /></a>
+					<a class="col4 last" target="_blank" href="http://twitter.com/haxcb"><img src="images/icon_tw.png" /></a>
+					
 					<div class="clear"></div>
 				</div>
-				<div class="center"><a class="link" target="_blank" href="Resume140601.pdf">Download CV/Resume</a></div>
+				
 				<div class="center small">&copy; <script>document.write(new Date().getFullYear());</script> Hasiba Arshad</div>
-				<hr />
+
 			</div>
 		</section>		
 		
