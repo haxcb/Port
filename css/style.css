@@ -140,7 +140,7 @@ a, a:active, a:visited {
 }
 
 a:hover {
-	color:#f06465;
+	color:#d3424a;
 }
 
 
@@ -677,63 +677,28 @@ nav #menuDrawer {
 
 
 @media only screen and (max-width: 990px) {
-	nav {
-		'background-size': '100%',
-		'-webkit-background-size': '100%',
-		'-moz-background-size':'100%',
-		'-o-background-size': '100%'
-		/* Makes IE size correctly */
-		filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/behind.png', sizingMethod='scale');
-		-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/behind.png', sizingMethod='scale')";		
-	}
-	
-	.siege nav {
-		/* Makes IE size correctly */
-		filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/siege/behind.png', sizingMethod='scale');
-		-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/siege/behind.png', sizingMethod='scale')";				
-	}
 	
 	nav #menuDrawer {
 		display:block;
 		width:36px;
 		height:30px;
-		background-image:url('../img/burger.png');
+		background-image:url('../images/icon_burger.png');
 		background-repeat:no-repeat;
+		background-size:100% 100%;
 		margin:0 30px;
 		float:right;
 	}
+	
 	nav .right {
 		display:none;
 		clear:both;
 		float:none;
 		text-align:center;
 		padding-top:30px;
-		padding-bottom:50px;
+		padding-bottom:30px;
 		box-sizing:border-box;
 		opacity:1;
-		background-image:url('../img/behind2.png');
-		background-repeat:no-repeat;
-		background-size: 100% 100%;
-		-webkit-background-size: 100% 100%;
-		-moz-background-size:100% 100%;
-		-o-background-size: 100% 100%;
-		/* Makes IE size correctly */
-		filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/behind2.png', sizingMethod='scale');
-		-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/behind2.png', sizingMethod='scale')";
-	}
-	
-	.siege nav .right {
-		background-image:url('../img/siege/behind2.png');
-		/* Makes IE size correctly */
-		filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/siege/behind2.png', sizingMethod='scale');
-		-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/siege/behind2.png', sizingMethod='scale')";
-	}
-	
-	.inda nav .right {
-		background-image:url('../img/inda/behind2.png');
-		/* Makes IE size correctly */
-		filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/inda/behind2.png', sizingMethod='scale');
-		-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/inda/behind2.png', sizingMethod='scale')";
+		background-color:#43a5aa;
 	}
 	
 	nav .right .left {

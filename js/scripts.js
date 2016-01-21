@@ -75,51 +75,25 @@ $(document).ready(function() {
 	});
 
 	
-	
 	/*************************************
 		Menu animation for small screens
 	*************************************/
 	$('#menuDrawer').on('click', function(e) {
 		e.preventDefault();
-		if($('nav .right').css('display') == 'none') {
-			console.log("MENU VISIBLE");
-			$('nav').css({	
-				'background-size': '100% 80px',
-				'-webkit-background-size': '100%  80px',
-				'-moz-background-size':'100%  80px',
-				'-o-background-size': '100%  80px'
-			});
-		} else {
-			console.log("MENU HIDDEN");
-			setTimeout(function() {
-				$('nav').css({
-					'background-size': '100% 100%',
-					'-webkit-background-size': '100% 100%',
-					'-moz-background-size':'100% 100%',
-					'-o-background-size': '100% 100%'
-				});
-			}, 300);
-		}
+		
 		$('nav .right').slideToggle();
-
+		// $('nav .right').css('height', '2000px').stop(true, true).animate({opacity:'toggle', height:'toggle'});
+		
 	});
 	
 	$(window).resize(function() {
 		if($(window).width() > 970) {
 			if($('nav .right').css('float') == 'right') {
 				$('nav .right').show();
-				console.log("float right");			
 			}
 		} else {
 			$('nav .right').hide();
-			console.log("collapse");
 		}
-		$('nav').css({
-			'background-size': '100% 100%',
-			'-webkit-background-size': '100% 100%',
-			'-moz-background-size':'100% 100%',
-			'-o-background-size': '100% 100%'
-		});	
 	});
 	
 	
