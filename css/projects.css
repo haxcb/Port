@@ -111,11 +111,25 @@ nav {
 	opacity:0.9;
 }
 
+nav a, nav a:active, nav a:visited {
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,-0,0);
+}
+
+nav a:hover {
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(0,10%,0);
+	transform: translate3d(0,10%,0);
+}
+
 .back {
 	position:absolute;
 	width:80px;
 	height:80px;
-	background-image:url('../images/logo.png');
+	background-image:url('../images/back.png');
 	background-size:100% 100%;
 	background-repeat:no-repeat;
 	display:block;
@@ -328,21 +342,32 @@ section.lightBG {
 
 .credits {
 	margin:0 auto;
-	width:460px;
-	margin: 30px auto;
+	width:530px;
+	margin: 30px auto 0 auto;
+	padding:50px 0;
 }
 
-.credits .left {
-	text-align:right;
-	width:200px;
+.credits h4, .credits p {
+	font-size:18px;
+	line-height:2;
+	margin:0;
+	padding:0;
+	letter-spacing:1.5px;
+}
+
+.credits h4 {
 	float:left;
-	margin-right:60px;
+	text-align:right;
+	width:100px;
+	font-weight:500;
+	text-transform:uppercase;
+	margin-right:30px;
 }
 
-.credits .right { 
+.credits p { 
 	float:left;
 	text-align:left;
-	width:200px;
+	width:400px;
 }
 
 .adjustingCaption {
@@ -619,6 +644,147 @@ section.lightBG {
 
 
 
+/****************************************
+	NatGeo Styles
+*****************************************/
+
+#louvre .colorBG {
+	background-color:#34a393;
+}
+
+#louvre .colorBG h1, #louvre .colorBG p {
+	color:#fff;
+}
+
+
+#louvre .logoBox h1, #louvre  .logoBox h2 {
+	text-transform:uppercase;
+	font-size:60px;
+	margin:0;
+	padding:0;
+	line-height:90%;
+	color:#fff;
+	font-weight:700;
+	font-family:'Museo Sans', Tahoma, Arial, sans-serif;
+}
+
+#louvre .header .logoBox h1 {
+	font-weight:100;
+}
+
+#louvre h1 {
+	color:#34a393;
+	font-size:40px;
+	font-weight:500;
+	margin:0;
+	margin-top:30px;
+	margin-bottom:15px;
+	letter-spacing:2px;
+}
+
+
+#louvre .emph {
+	color:#34a393;
+	font-style:italic;
+	font-size:30px;
+	line-height:1.1;
+}
+
+#louvre .col2 h1 {
+	margin:0;
+	margin-bottom:5px;
+	padding:0;
+}
+
+
+#louvre .flushTop {
+	margin-top:0;
+	padding-top:0;
+}
+
+#louvre .micro .col2 {
+	max-width:550px;
+}
+
+#louvre .micro .col3 {
+	max-width:500px;
+}
+
+#louvre .micro .together1 {
+	max-width:1500px;
+	margin:0 auto;
+}
+
+#louvre .micro .together2 {
+	max-width:1150px;
+	margin:0 auto;
+}
+
+#louvre .micro .col2 img, #louvre .micro .col3 img {
+	width:auto;
+	max-width:100%;
+}
+
+@media only screen and (max-width: 1550px) {
+	#louvre .header .logoBox {
+		right:40px;
+		bottom:40px;
+	}
+}
+
+@media only screen and (max-width: 1350px) {
+	#louvre .header .logoBox {
+		text-align:right;
+	}
+	
+	#louvre .header h1, .header h2 {
+		font-size:50px;
+		
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	#louvre .header h1, #louvre  .header h2 {
+		font-size:50px;
+		color:#fff;		
+	}
+	
+	#louvre .header .logoBox {
+		text-align:center;
+		position:relative;
+		color:#fff;
+		margin:0 auto;
+		width:90%;
+		max-width:750px;		
+		right:0;
+		bottom:0;
+		margin-top:50px;
+		padding:50px;
+		background-color:#34a393;
+		/* box-shadow: 20px 20px 0px rgba(39, 122, 110, 1), -20px -20px 0px rgba(39, 122, 110,1); */
+	}	
+	
+	#louvre .logoBox > p {
+		width:400px;
+		margin:30px auto;
+	}
+	
+}
+
+@media only screen and (max-width: 600px) {
+	#louvre .logoBox > p {
+		width:90%;
+		margin:30px auto;
+	}	
+	
+	#louvre .micro h1 {
+		font-size:30px;
+	}
+
+}
+
+
+
 
 
 
@@ -667,6 +833,7 @@ section.lightBG {
 		margin:0 auto 50px auto;
 	}
 	
+	
 	.leftText {
 		float:none;
 		
@@ -683,33 +850,28 @@ section.lightBG {
 		width:90%;
 	}
 	
-	.credits {
-		width:460px;
-	}
-	
 	.adjustingCaption {
 		text-align:center;
 	}
 }
 
 @media only screen and (max-width: 600px) {
-
-	
 	.credits {
-		width:100%;
+		width:90%;
+	}
+	.credits h4 {
+		float:none;
+		text-align:left;
+		margin:0 auto;
+		width:90%;
 	}
 	
-	.credits .left {
+	.credits p{
 		float:none;
-		text-align:center;
+		text-align:left;
 		margin:0 auto;
 		margin-bottom:30px;
-	}
-	
-	.credits .right{
-		float:none;
-		text-align:center;
-		margin:0 auto;
+		width:90%;
 	}
 	
 	.bumpUp {
