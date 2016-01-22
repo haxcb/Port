@@ -1,0 +1,655 @@
+/*************************************************
+				SITE-WIDE STYLES
+*************************************************/
+
+* {
+	box-sizing:border-box;
+}
+
+html, body {
+	/* Clear margins & padding */
+	margin:0;
+	padding:0;
+	border:0;
+	
+	/* Allow elements to size to 100% height of browser */
+	height:100%;
+	
+	font-family:'Source Sans Pro', Tahoma, Arial, sans-serif;
+	color:#333;
+	font-size:1.1em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family:'Source Sans Pro', Tahoma, Arial, sans-serif;
+	color:#333;
+	text-transform:uppercase;
+	font-weight:normal;
+	position:relative;
+	margin:0;
+	padding:0;
+}
+
+p {
+	margin:0;
+	margin-top:5px;	
+}
+
+h1 {
+	line-height:1.1;	
+}
+
+h2 {
+	text-transform:none;
+}
+
+h3, h4 {
+	color:#898787;
+}
+
+h4 {
+	text-transform:none;
+}
+
+header, hgroup, nav, menu, section, article, aside, footer {
+	display: block;
+}
+
+img {
+	width:100%;
+}
+
+strong {
+	font-weight:700;
+}
+
+.left {
+	float:left;
+}
+
+.right {
+	float:right;
+}
+
+.clear {
+	clear:both;
+}
+
+.center {
+	text-align:center;
+}
+
+section {
+	width:100%;
+	min-width:319px;
+	margin:0 auto;
+}
+
+/*************************************************
+				SPECIFIC STYLES
+*************************************************/
+
+.header  {
+	width:100%;
+	position:relative;
+	color:#fff;
+	text-align:left;
+	margin-bottom:40px;
+}
+
+.header .headerBG {
+	width:100%;
+	height:auto;
+	display:block;
+	
+}
+
+.header .logoBox {
+	width:400px;
+	position:absolute;
+	right:60px;
+	bottom:70px;
+	font-size:24px;
+}
+
+.video {
+	
+	position: relative; 
+	padding-bottom: 56.25%; 
+	height: 0; 
+	overflow: hidden; 
+	max-width: 100%; 
+	height: auto; 
+	margin:70px 0;
+} 
+	
+.video iframe, .embed-container object, .embed-container embed {
+	position: absolute; 
+	top: 0; left: 0; 
+	width: 100%; 
+	height: 100%; 
+}
+
+h5 {
+	font-size:20px;
+	color:#888;
+	letter-spacing:3px;
+	margin-bottom:5px;
+}
+
+.col2 {
+	width:48%;
+}
+
+.leftText {
+	float:left;
+	text-align:right;
+	margin-right:4%;
+}
+
+.rightText {
+	float:right;
+	text-align:left;
+}
+
+
+.shadow {
+	box-shadow: 20px 20px 0px rgba(0, 0, 0, 0.2);
+
+}
+
+
+
+.container {
+	width:70%;
+	margin:0 auto;
+	position:relative;
+	padding:30px 0 80px 0;
+}
+
+.partialContainer {
+	width:85%;
+	margin:0 auto;
+	padding-bottom:80px;
+}
+
+.partialContainer img {
+	margin-top:50px;
+}
+
+.colorBG .container {
+	padding-bottom:0px;
+}
+
+.colorBG p {
+	line-height:1.2;
+}
+
+
+.uxflow {
+	padding-top:20px;
+}
+
+.uxflow img {
+	margin-top:-100px;
+}
+
+.uxflow h1 {
+	width:200px;
+	margin-left:15%;
+}
+
+.text {
+
+    font-weight: 300;
+    line-height: 1.7;
+    font-size: 28px;
+	width:1000px;
+	margin:0 auto;
+}
+
+section.lightBG {
+	background-color:#e6e7e8;
+}
+
+.noTitle {
+	padding-top:50px;
+}
+
+.caption {
+	font-size:1em;
+	text-align:center;
+	margin-top:10px;
+}
+
+.value {
+	margin-bottom:70px;
+}
+.value.last {
+	margin-bottom:0;
+}
+
+.value  img{
+	width:70px;
+	float:left;
+	margin-top:10px;
+}
+
+.value .content {
+	margin-left:90px;
+}
+
+.context {
+	background-color:#e7e7e7;
+	padding:70px;
+	position:relative;
+	margin-top:30px;
+}
+
+
+
+.number {
+	width:50px;
+	height:50px;
+	position:absolute;
+	top:0;
+	left:0;
+	padding-top:4px;
+	background-color:#434343;
+	color:#fff;
+	text-align:center;
+	font-family:'DistrictPro', Tahoma, Arial, sans-serif;
+	font-size:1.5em;
+}
+
+.arrow-down {
+	width: 0; 
+	height: 0; 
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 10px solid #559d36;
+	margin:0 auto;
+}
+
+
+.line {
+	height:140px;
+	width:1px;
+	/* background-color:#559d36; */
+	margin:0 auto;
+}
+
+.label {
+	margin:-100px auto 52px auto;
+	text-align:center;
+	color:#559d36;
+	padding:10px;
+	border:1px solid #559d36;
+	width:200px;
+	background-color:#fff;
+}
+
+hr {
+	border:none;
+	border-top:1px solid #559d36;
+	margin:60px 0;
+}
+
+hr::after {
+	display:block;
+	width:20px;
+	height:20px;
+	content:'';
+	border:1px solid #559d36;
+	background-color:#fff;
+	margin:-10px auto 0 auto;
+	position:absolute;
+	margin-left:48%;
+}
+
+.credits {
+	margin:0 auto;
+	width:460px;
+	margin: 30px auto;
+}
+
+.credits .left {
+	text-align:right;
+	width:200px;
+	float:left;
+	margin-right:60px;
+}
+
+.credits .right { 
+	float:left;
+	text-align:left;
+	width:200px;
+}
+
+.adjustingCaption {
+	text-align:left;
+}
+
+/* .up {
+	margin-top:-40px;
+} */
+
+.connected {
+	background:url('../img/line.png') repeat-y center top;
+}
+
+.bumpUp {
+	margin-top:-30px;
+}
+
+
+/*************************************************
+				GALLERY-SPECIFIC STYLES
+*************************************************/
+.slider {
+	overflow:hidden; /* Delete me to show thumbs */ 
+	background-image:url('../img/main.png');
+	background-repeat:no-repeat;
+	background-size: contain;
+	-webkit-background-size: contain;
+	-moz-background-size:contain;
+	-o-background-size: contain;
+	/* Makes IE size correctly */
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/main.png', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/main.png', sizingMethod='scale')";
+	max-width:1500px;
+	padding-left:14.5%;
+	padding-top:3.5%;
+	margin-top:30px;
+}
+
+.slider ul {
+	-webkit-padding-start: 0px;
+	-webkit-margin-after: 0px;
+	-webkit-margin-before: 0px;
+}
+
+.slider .img {
+	width:100%;
+}
+
+.flexslider {
+	border:none;
+	border-radius:0px;
+	overflow:hidden; 
+	width:83.5%; 
+	background:none;
+	height:100%;
+	-webkit-box-shadow:none;
+	box-shadow:none;
+	/* margin:0; */
+}
+
+.shine {
+	width:74.7%;	
+	position:absolute;
+	left:0;
+	top:0;
+	z-index:10;
+}
+
+.flex-viewport {
+	border:0px solid #222;
+	-webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+	background:none;
+}
+
+
+.flex-control-nav  {
+	position:relative;
+	bottom:-0.2em;
+}
+
+.flexslider a  {
+	color:rgba(0, 0, 0, 0.8);
+}
+
+.flexslider a:hover {
+	color:rgba(0, 0, 0, 0.9);
+}
+
+.flexslider:hover .flex-prev, 
+.flexslider:hover .flex-next { 
+	opacity: 0.3; 
+}
+
+.flexslider:hover .flex-prev:hover, 
+.flexslider:hover .flex-next:hover { 
+	opacity: 0.6; 
+}
+
+
+.flex-control-paging li a {
+	background-color:#bbb;
+}
+
+.flex-control-paging li a.flex-active {
+	background-color:#666;
+}
+
+.flex-control-paging li a:hover {
+	background-color:#fff;
+}
+
+.flex-direction-nav a:before,
+.flex-direction-nav a.flex-next:before {
+	content:'';	
+}
+
+.flex-direction-nav .flex-prev,
+.flex-direction-nav .flex-next {
+	background:url('../img/arrow.png') no-repeat;
+	width:25px;
+	height:40px;
+}
+
+.flex-direction-nav .flex-next {
+	-moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+}
+
+
+/****************************************
+	Louvre Styles
+*****************************************/
+
+#louvre .colorBG {
+	background-color:#34a393;
+}
+
+#louvre .colorBG h1, #louvre .colorBG p {
+	color:#fff;
+}
+
+
+#louvre .logoBox h1, #louvre  .logoBox h2 {
+	text-transform:uppercase;
+	font-size:60px;
+	margin:0;
+	padding:0;
+	line-height:90%;
+	color:#fff;
+	font-weight:700;
+	font-family:'Museo Sans', Tahoma, Arial, sans-serif;
+}
+
+#louvre .header .logoBox h1 {
+	font-weight:100;
+}
+
+#louvre h1 {
+	color:#34a393;
+	font-size:40px;
+	font-weight:500;
+	margin:0;
+	margin-top:30px;
+	margin-bottom:15px;
+	letter-spacing:2px;
+}
+
+#louvre .emph {
+	color:#34a393;
+	font-style:italic;
+	font-size:30px;
+	line-height:1.1;
+}
+
+#louvre .col2 h1 {
+	margin:0;
+	margin-bottom:5px;
+	padding:0;
+}
+
+@media only screen and (max-width: 1550px) {
+	#louvre .header .logoBox {
+		right:40px;
+		bottom:40px;
+	}
+}
+
+@media only screen and (max-width: 1350px) {
+	#louvre .header .logoBox {
+		text-align:right;
+	}
+	
+	#louvre .header h1, .header h2 {
+		font-size:50px;
+		
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	#louvre .header h1, #louvre  .header h2 {
+		font-size:50px;
+		color:#fff;		
+	}
+	
+	#louvre .header .logoBox {
+		text-align:center;
+		position:relative;
+		color:#fff;
+		margin:0 auto;
+		width:90%;
+		max-width:750px;		
+		right:0;
+		bottom:0;
+		margin-top:50px;
+		padding:50px;
+		background-color:#34a393;
+		/* box-shadow: 20px 20px 0px rgba(39, 122, 110, 1), -20px -20px 0px rgba(39, 122, 110,1); */
+	}	
+	
+	#louvre .logoBox > p {
+		width:400px;
+		margin:30px auto;
+	}
+	
+}
+
+@media only screen and (max-width: 600px) {
+	#louvre .logoBox > p {
+		width:90%;
+		margin:30px auto;
+	}	
+}
+
+
+
+@media only screen and (max-width: 600px) {
+	.flex-control-nav  {
+		bottom:0em;
+	}
+}
+
+@media only screen and (max-width: 860px) {
+	.flex-direction-nav .flex-next {
+		opacity:0.3;
+		right:-50px;
+	}	
+	.flex-direction-nav .flex-prev {
+		opacity:0.3;
+		left:-50px;
+	}
+}
+
+
+/*************************************************
+				RESPONSIVE MOBILE
+*************************************************/
+
+@media only screen and (max-width: 1000px) {
+	.col2 {
+		width:100%;
+	}
+	
+	.leftText {
+		float:none;
+		
+		text-align:left;
+	}
+	.rightText {
+		float:none;
+		margin-bottom:30px;
+	}
+}
+
+@media only screen and (max-width: 1100px) {
+	.container {
+		width:90%;
+	}
+	
+	.credits {
+		width:460px;
+	}
+	
+	.uxflow h1 {
+		text-align:center;
+		margin:0 auto;
+		margin-bottom:30px;
+	}
+	
+	.uxflow img {
+		margin-top:-20px;
+	}
+	
+	.adjustingCaption {
+		text-align:center;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+
+	
+	.credits {
+		width:100%;
+	}
+	
+	.credits .left {
+		float:none;
+		text-align:center;
+		margin:0 auto;
+		margin-bottom:30px;
+	}
+	
+	.credits .right{
+		float:none;
+		text-align:center;
+		margin:0 auto;
+	}
+	
+	.bumpUp {
+		margin-top:-40px;
+	}
+}
+
