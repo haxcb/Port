@@ -95,6 +95,10 @@ strong {
 	text-align:center;
 }
 
+.upChunk {
+	margin-top:30px;
+}
+
 section {
 	width:100%;
 	min-width:319px;
@@ -382,9 +386,6 @@ section.lightBG {
 	background:url('../img/line.png') repeat-y center top;
 }
 
-.bumpUp {
-	margin-top:-30px;
-}
 
 
 /*************************************************
@@ -506,6 +507,11 @@ section.lightBG {
 .loader {
 	background-color:#34a393;
 }
+
+.flushTop {
+	margin-top:0;
+	padding-top:0;
+}
 			
 
 /****************************************
@@ -518,6 +524,15 @@ section.lightBG {
 
 #louvre .colorBG h1, #louvre .colorBG p {
 	color:#fff;
+}
+
+#louvre .loader {
+	background-color:#34a393;
+}
+
+#louvre .flushTop {
+	margin-top:0;
+	padding-top:0;
 }
 
 
@@ -560,11 +575,6 @@ section.lightBG {
 	padding:0;
 }
 
-
-#louvre .flushTop {
-	margin-top:0;
-	padding-top:0;
-}
 
 #louvre .micro .col2 {
 	max-width:550px;
@@ -648,32 +658,56 @@ section.lightBG {
 	NatGeo Styles
 *****************************************/
 
-#louvre .colorBG {
-	background-color:#34a393;
+#natgeo .colorBG {
+	background-color:#ffdd33;
 }
 
-#louvre .colorBG h1, #louvre .colorBG p {
-	color:#fff;
+#natgeo .colorBG h1{
+	color:#967900;
+} 
+#natgeo .colorBG p {
+	color:#000;
 }
 
+#natgeo .flushTop {
+	margin-top:0;
+	padding-top:0;
+}
 
-#louvre .logoBox h1, #louvre  .logoBox h2 {
+#natgeo .loader {
+	background-color:#ffdd33;
+}
+
+#natgeo .header .logoBox {
+	width:520px;
+}
+
+svg {
+	font-family:'Source Sans Pro', Tahoma, sans-serif;
+}
+
+#natgeo .logoBox h1, #natgeo  .logoBox h2 {
 	text-transform:uppercase;
-	font-size:60px;
+	font-size:65px;
 	margin:0;
 	padding:0;
 	line-height:90%;
-	color:#fff;
-	font-weight:700;
-	font-family:'Museo Sans', Tahoma, Arial, sans-serif;
-}
-
-#louvre .header .logoBox h1 {
+	color:#000;
 	font-weight:100;
+	font-family:'Gotham', Tahoma, Arial, sans-serif;
+}
+#natgeo .logoBox p {
+	color:#000;
 }
 
-#louvre h1 {
-	color:#34a393;
+#natgeo .header .logoBox h1 {
+	font-weight:100;
+	font-size:20px;
+	font-family:'Helvetica', Tahoma, Arial, sans-serif;
+}
+
+#natgeo h1 {
+	color:#967900;
 	font-size:40px;
 	font-weight:500;
 	margin:0;
@@ -683,76 +717,103 @@ section.lightBG {
 }
 
 
-#louvre .emph {
-	color:#34a393;
+#natgeo .emph {
+	color:#967900;
 	font-style:italic;
 	font-size:30px;
 	line-height:1.1;
 }
 
-#louvre .col2 h1 {
+#natgeo .emph.col2.leftText {
+	font-weight:300;
+}
+
+#natgeo .col2 h1 {
 	margin:0;
 	margin-bottom:5px;
 	padding:0;
 }
 
 
-#louvre .flushTop {
-	margin-top:0;
-	padding-top:0;
-}
-
-#louvre .micro .col2 {
+#natgeo .micro .col2 {
 	max-width:550px;
 }
 
-#louvre .micro .col3 {
+#natgeo .micro .col3 {
 	max-width:500px;
 }
 
-#louvre .micro .together1 {
-	max-width:1500px;
+#natgeo  .together {
+	max-width:700px;
+	width:auto;
 	margin:0 auto;
 }
 
-#louvre .micro .together2 {
-	max-width:1150px;
-	margin:0 auto;
+
+#natgeo .together h5 {
+	margin-top:140px;
+	width:30%;
 }
 
-#louvre .micro .col2 img, #louvre .micro .col3 img {
+#natgeo .together img {
+	width: 58%;
+}
+
+
+#natgeo .norm {
+	width:auto;
+	max-width:100%;
+	margin:0 auto;
+	margin-top:50px;
+}
+
+#natgeo .micro .col2 img, #natgeo .micro .col3 img {
 	width:auto;
 	max-width:100%;
 }
 
 @media only screen and (max-width: 1550px) {
-	#louvre .header .logoBox {
+	#natgeo .header .logoBox {
 		right:40px;
 		bottom:40px;
 	}
 }
 
 @media only screen and (max-width: 1350px) {
-	#louvre .header .logoBox {
-		text-align:right;
+	#natgeo .header .logoBox  {
+		width:380px;
 	}
-	
-	#louvre .header h1, .header h2 {
+	#natgeo .header .logoBox h1 {
+		font-size:15px;
+	}
+	#natgeo .header .logoBox h2 {
 		font-size:50px;
 		
 	}
 }
 
+@media only screen and (max-width: 1100px) {
+	#natgeo .header .logoBox  {
+		bottom:15px;
+		right:15px;
+	}
+}
+
 @media only screen and (max-width: 1000px) {
-	#louvre .header h1, #louvre  .header h2 {
+	#natgeo .header .logoBox h2 {
 		font-size:50px;
-		color:#fff;		
+		color:#000;		
 	}
 	
-	#louvre .header .logoBox {
+	#natgeo  .header .logoBox h1 {
+		font-size:20px;
+		margin-left:-270px;
+	}
+	
+	#natgeo .header .logoBox {
 		text-align:center;
 		position:relative;
-		color:#fff;
+		color:#000;
 		margin:0 auto;
 		width:90%;
 		max-width:750px;		
@@ -760,25 +821,51 @@ section.lightBG {
 		bottom:0;
 		margin-top:50px;
 		padding:50px;
-		background-color:#34a393;
+		background-color:#ffdd33;
 		/* box-shadow: 20px 20px 0px rgba(39, 122, 110, 1), -20px -20px 0px rgba(39, 122, 110,1); */
 	}	
 	
-	#louvre .logoBox > p {
+	#natgeo .logoBox > p {
 		width:400px;
 		margin:30px auto;
+	}
+	
+		
+	#natgeo .together .leftText {
+		float:left;
+		text-align:right;
 	}
 	
 }
 
 @media only screen and (max-width: 600px) {
-	#louvre .logoBox > p {
+	#natgeo .logoBox > p {
 		width:90%;
 		margin:30px auto;
 	}	
+	#natgeo .header .logoBox h1 {
+		text-align:center;
+		margin-left:0;
+	}
 	
-	#louvre .micro h1 {
+	#natgeo .micro h1 {
 		font-size:30px;
+	}
+	
+	#natgeo .together {
+		width:100%;
+	}
+	
+	#natgeo .together .leftText {
+		float:none;
+		text-align:center;
+		width:100%;
+		margin-top:0;
+		margin-bottom:30px;
+	}
+	#natgeo .together img {
+		float:none;
+		width:100%;
 	}
 
 }
@@ -832,17 +919,17 @@ section.lightBG {
 		max-width:500px;
 		margin:0 auto 50px auto;
 	}
-	
+
 	
 	.leftText {
 		float:none;
-		
 		text-align:left;
 	}
 	.rightText {
 		float:none;
 		margin-bottom:30px;
 	}
+
 }
 
 @media only screen and (max-width: 1100px) {
@@ -872,10 +959,6 @@ section.lightBG {
 		margin:0 auto;
 		margin-bottom:30px;
 		width:90%;
-	}
-	
-	.bumpUp {
-		margin-top:-40px;
 	}
 }
 
