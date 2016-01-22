@@ -538,20 +538,30 @@ section.lightBG {
 
 #louvre .flushTop {
 	margin-top:0;
+	padding-top:0;
 }
 
 #louvre .micro .col2 {
 	max-width:550px;
 }
 
-#louvre .micro .together {
+#louvre .micro .col3 {
+	max-width:500px;
+}
+
+#louvre .micro .together1 {
+	max-width:1500px;
+	margin:0 auto;
+}
+
+#louvre .micro .together2 {
 	max-width:1150px;
 	margin:0 auto;
 }
 
-#louvre .micro img {
+#louvre .micro .col2 img, #louvre .micro .col3 img {
 	width:auto;
-	max-width:95%;
+	max-width:100%;
 }
 
 @media only screen and (max-width: 1550px) {
@@ -645,6 +655,9 @@ section.lightBG {
 		width:100%;
 		max-width:500px;
 		margin:0 auto 50px auto;
+	}
+	.micro .col3.left.last {
+		margin-bottom:0;
 	}
 	
 	.micro .col2 {
