@@ -1,8 +1,17 @@
 /*************************************
 	Loader
 *************************************/
+
+$('html, body').css({ 'overflow': 'hidden', 'height': '100%' });
+
 $(window).load(function() {
 	/* $('body').delay(1100).css('overflow', 'visible'); */
+	$('html, body').delay(500).queue(
+		function (next) { 
+			$(this).removeAttr('style'); 
+			next();
+			}
+		);
 	$(".loader").delay(500).fadeOut("slow");
 })
 

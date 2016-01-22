@@ -703,7 +703,7 @@ section.lightBG {
 }
 
 #natgeo h1 {
-	color:#967900;
+	color:#dbb823;
 	font-size:40px;
 	font-weight:500;
 	margin:0;
@@ -712,9 +712,12 @@ section.lightBG {
 	letter-spacing:2px;
 }
 
+#natgeo .lightBG h1 {
+	color:#dbb823;
+}
 
 #natgeo .emph {
-	color:#967900;
+	color:#a08100;
 	font-style:italic;
 	font-size:30px;
 	line-height:1.1;
