@@ -19,6 +19,10 @@ html, body {
 	color:#333;
 	font-size:1.1em;
 }
+/* 
+body {
+	overflow:hidden;
+} */
 
 h1, h2, h3, h4, h5, h6 {
 	font-family:'Source Sans Pro', Tahoma, Arial, sans-serif;
@@ -84,6 +88,27 @@ section {
 	min-width:319px;
 	margin:0 auto;
 }
+
+nav {
+	position:fixed;
+	z-index:20;
+	padding-top:16px;
+	box-sizing:border-box;
+	min-height:60px;
+	margin:0 30px;
+	opacity:0.9;
+}
+
+.back {
+	position:absolute;
+	width:80px;
+	height:80px;
+	background-image:url('../images/logo.png');
+	background-size:100% 100%;
+	background-repeat:no-repeat;
+	display:block;
+}
+
 
 /*************************************************
 				SPECIFIC STYLES
@@ -459,6 +484,10 @@ hr::after {
         -ms-filter: "FlipH";
 }
 
+.loader {
+	background-color:#34a393;
+}
+			
 
 /****************************************
 	Louvre Styles
