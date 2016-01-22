@@ -682,10 +682,6 @@ section.lightBG {
 	width:520px;
 }
 
-svg {
-	font-family:'Source Sans Pro', Tahoma, sans-serif;
-}
-
 #natgeo .logoBox h1, #natgeo  .logoBox h2 {
 	text-transform:uppercase;
 	font-size:65px;
