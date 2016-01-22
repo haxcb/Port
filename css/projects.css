@@ -24,6 +24,10 @@ body {
 	overflow:hidden;
 } */
 
+img {
+	display:block;
+}
+
 h1, h2, h3, h4, h5, h6 {
 	font-family:'Source Sans Pro', Tahoma, Arial, sans-serif;
 	color:#333;
@@ -44,7 +48,15 @@ h1 {
 }
 
 h2 {
-	text-transform:none;
+	text-transform:uppercase;
+	color:#58595b;
+	font-size:35px;
+	font-weight:500;
+	margin:0;
+	margin-top:30px;
+	margin-bottom:-30px;
+	letter-spacing:2px;
+}
 }
 
 h3, h4 {
@@ -164,6 +176,10 @@ h5 {
 
 .col2 {
 	width:48%;
+}
+
+.col3 {
+	width:33%;
 }
 
 .leftText {
@@ -308,24 +324,6 @@ section.lightBG {
 	border:1px solid #559d36;
 	width:200px;
 	background-color:#fff;
-}
-
-hr {
-	border:none;
-	border-top:1px solid #559d36;
-	margin:60px 0;
-}
-
-hr::after {
-	display:block;
-	width:20px;
-	height:20px;
-	content:'';
-	border:1px solid #559d36;
-	background-color:#fff;
-	margin:-10px auto 0 auto;
-	position:absolute;
-	margin-left:48%;
 }
 
 .credits {
@@ -523,6 +521,7 @@ hr::after {
 	letter-spacing:2px;
 }
 
+
 #louvre .emph {
 	color:#34a393;
 	font-style:italic;
@@ -539,6 +538,20 @@ hr::after {
 
 #louvre .flushTop {
 	margin-top:0;
+}
+
+#louvre .micro .col2 {
+	max-width:550px;
+}
+
+#louvre .micro .together {
+	max-width:1150px;
+	margin:0 auto;
+}
+
+#louvre .micro img {
+	width:auto;
+	max-width:95%;
 }
 
 @media only screen and (max-width: 1550px) {
@@ -625,6 +638,20 @@ hr::after {
 @media only screen and (max-width: 1000px) {
 	.col2 {
 		width:100%;
+	}
+	
+	.micro .col3.left {
+		float:none;
+		width:100%;
+		max-width:500px;
+		margin:0 auto 50px auto;
+	}
+	
+	.micro .col2 {
+		float:none;
+		width:100%;
+		max-width:500px;
+		margin:0 auto 50px auto;
 	}
 	
 	.leftText {
