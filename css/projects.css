@@ -185,6 +185,7 @@ h5 {
 
 
 
+
 .container {
 	width:70%;
 	margin:0 auto;
@@ -202,35 +203,30 @@ h5 {
 	margin-top:50px;
 }
 
-.colorBG .container {
-	padding-bottom:0px;
+
+.clearBot {
+	padding-bottom:0;
 }
+
 
 .colorBG p {
 	line-height:1.2;
 }
 
 
-.uxflow {
-	padding-top:20px;
-}
-
-.uxflow img {
-	margin-top:-100px;
-}
-
-.uxflow h1 {
-	width:200px;
-	margin-left:15%;
-}
 
 .text {
 
     font-weight: 300;
     line-height: 1.7;
-    font-size: 28px;
+    font-size: 24px;
 	width:1000px;
+	
 	margin:0 auto;
+}
+
+.text p {
+	margin-top:30px;
 }
 
 section.lightBG {
@@ -540,6 +536,11 @@ hr::after {
 	padding:0;
 }
 
+
+#louvre .flushTop {
+	margin-top:0;
+}
+
 @media only screen and (max-width: 1550px) {
 	#louvre .header .logoBox {
 		right:40px;
@@ -595,6 +596,10 @@ hr::after {
 
 
 
+
+
+
+
 @media only screen and (max-width: 600px) {
 	.flex-control-nav  {
 		bottom:0em;
@@ -640,16 +645,6 @@ hr::after {
 	
 	.credits {
 		width:460px;
-	}
-	
-	.uxflow h1 {
-		text-align:center;
-		margin:0 auto;
-		margin-bottom:30px;
-	}
-	
-	.uxflow img {
-		margin-top:-20px;
 	}
 	
 	.adjustingCaption {
