@@ -1,0 +1,11 @@
+# Allow .htaccess files their full power
+# AllowOverride All
+# DirectoryIndex index.html
+
+#Block access to subdirectories
+Options -Indexes
+
+# Hide filename extensions
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
