@@ -923,12 +923,43 @@ a.downLink {
 	
 	/* Works thumbnails */
 	.works .col {
-		width:100%;
+		width:95%;
+		margin:0 auto;
+		margin-bottom:20px;
+		float:none;
+	}
+	
+	.works .col:nth-child(2) {
+		margin: 0 auto;
+		margin-bottom:20px;
 	}
 	
 	.copyright p {
 		width:95%;
+		font-size:20px;
+	}
+
+}
+
+@media only screen and (max-width: 600px) {
+
+	body {
+		font-size:20px;
+	}	
+	
+	h1 {
+		font-size:30px;
 	}
 	
-
+	nav .left {
+		margin: 0 10px;
+	}
+	
+	.works .caption {
+		font-size:20px;
+	}
+	
+	.copyright p {
+		font-size:20px;
+	}
 }

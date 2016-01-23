@@ -160,6 +160,7 @@ nav a:hover {
 }
 
 .header .logoBox {
+	font-weight:300;
 	width:400px;
 	position:absolute;
 	right:60px;
@@ -254,7 +255,7 @@ h5 {
     font-weight: 300;
     line-height: 1.7;
     font-size: 24px;
-	width:1000px;
+	width:800px;
 	
 	margin:0 auto;
 }
@@ -643,6 +644,8 @@ section.lightBG {
 		margin:30px auto;
 	}
 	
+
+	
 }
 
 @media only screen and (max-width: 600px) {
@@ -650,6 +653,17 @@ section.lightBG {
 		width:90%;
 		margin:30px auto;
 	}	
+	#louvre  h1 {
+		font-size:30px;
+	}	
+	
+	#louvre  h2 {
+		font-size:25px;
+	}
+	#louvre .emph {
+		font-size:20px;
+		line-height:1.4;
+	}
 }
 
 
@@ -700,6 +714,7 @@ section.lightBG {
 	font-weight:100;
 	font-size:20px;
 	font-family:'Helvetica', Tahoma, Arial, sans-serif;
+	margin-bottom:10px;
 }
 
 #natgeo h1 {
@@ -780,7 +795,7 @@ section.lightBG {
 
 @media only screen and (max-width: 1350px) {
 	#natgeo .header .logoBox  {
-		width:380px;
+		width:390px;
 	}
 	#natgeo .header .logoBox h1 {
 		font-size:15px;
@@ -847,8 +862,16 @@ section.lightBG {
 		margin-left:0;
 	}
 	
-	#natgeo .micro h1 {
+	#natgeo  h1 {
 		font-size:30px;
+	}
+	#natgeo  h2 {
+		font-size:25px;
+	}
+	
+	#natgeo .emph {
+		font-size:20px;
+		line-height:1.4;
 	}
 	
 	#natgeo .together {
@@ -942,6 +965,21 @@ section.lightBG {
 }
 
 @media only screen and (max-width: 600px) {
+	.text {
+		font-size:20px;
+	}
+	
+	h5 {
+		font-size:16px;
+	}
+	
+	.header .logoBox {
+		font-size:20px;
+	}
+	
+	nav {
+		margin:0 10px;
+	}
 	.credits {
 		width:90%;
 	}
