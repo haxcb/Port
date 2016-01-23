@@ -316,8 +316,17 @@ section {
 	background-color:#58595b;
 }
 
+.caption p {
+	margin:0;
+	padding:0;
+	-webkit-transition: transform 0.2s;
+	transition: transform 0.2s;
+	-webkit-transform: translate(0px, 0px);
+	transform: translate(0px, 0px);
+}
+
 .works a:hover {
-	color:#fff;
+	color:#fff;	
 }
 
 .hvr-sweep-to-top  img {
@@ -333,6 +342,11 @@ section {
 	opacity:0.7;
 	-webkit-transform: scale3d(1.05,1.05,1);
 	transform: scale3d(1.05,1.05,1);
+}
+
+.hvr-sweep-to-top:hover  .caption p {
+	-webkit-transform: translate(0px, 8px);
+	transform: translate(0px, 8px);
 }
 
 
