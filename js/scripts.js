@@ -24,7 +24,14 @@ $(document).ready(function() {
 	*************************************/
 
 		
-		$(window).scroll(function() {	
+		$(window).scroll(function() {
+			
+			// Hide menu if it's open & user starts scrolling
+			if($(window).width() < 970) {
+				if(($('nav .right').is(':visible'))) {
+					$('nav .right').slideUp();
+				}
+			}
 			
 			if($window.scrollTop() >= $(window).height()/3) {
 				$('.downLink').hide();
