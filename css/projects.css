@@ -513,6 +513,22 @@ section.lightBG {
 	margin-top:0;
 	padding-top:0;
 }
+
+
+.download {
+	width:350px;
+	margin:0 auto;
+	margin-bottom:50px;
+}
+
+.download a {
+	float:left;
+	width:170px;
+}
+
+.download:first-child {
+	margin-right:10px;
+}
 			
 
 /****************************************
@@ -957,20 +973,6 @@ section.lightBG {
 	margin:50px 0 20px 0;
 }
 
-.download {
-	width:350px;
-	margin:0 auto;
-	margin-bottom:50px;
-}
-
-.download a {
-	float:left;
-	width:170px;
-}
-
-.download:first-child {
-	margin-right:10px;
-}
 
 #bike .lightBG h1 {
 	color:#4c5b7f;
@@ -1184,15 +1186,230 @@ section.lightBG {
 	#bike .together img {
 		float:none;
 		width:100%;
-	}
-	.download {
-		width:310px;
-	}
+	}	
 
-	.download a {
-		width:150px;
+}
+
+
+/****************************************
+	Busytown Styles
+*****************************************/
+
+#busytown .colorBG {
+	background-color:#f78e26;
+}
+
+#busytown .colorBG h1{
+	color:#fff;
+} 
+#busytown .colorBG p {
+	color:#fff;
+}
+
+#busytown .flushTop {
+	margin-top:0;
+	padding-top:0;
+}
+
+#busytown .loader {
+	background-color:#f78e26;
+}
+
+#busytown .header .logoBox {
+	width:460px;
+	text-align:right;
+	bottom:60px;
+}
+
+#busytown  .logoBox h2 {
+	text-transform:uppercase;
+	font-size:35px;
+	margin:0;
+	padding:0;
+	line-height:90%;
+	color:#fff;
+	font-weight:bold;
+	font-family:'Futura', Tahoma, Arial, sans-serif;
+}
+#busytown .logoBox p {
+	color:#fff;
+}
+
+#busytown .header .logoBox img {
+	margin-bottom:10px;
+	width:300px;
+}
+
+#busytown h1 {
+	color:#f05a28;
+	font-size:40px;
+	font-weight:500;
+	margin:0;
+	margin-top:30px;
+	margin-bottom:15px;
+	letter-spacing:2px;
+}
+
+#busytown img.overview {
+	margin:50px 0 20px 0;
+}
+
+
+#busytown .lightBG h1 {
+	color:#f05a28;
+}
+
+#busytown .emph {
+	color:#f05a28;
+	font-style:italic;
+	font-size:30px;
+	line-height:1.1;
+}
+
+#busytown .emph.col2.leftText {
+	font-weight:300;
+}
+
+#busytown .partialContainer {
+	max-width:1200px;
+}
+
+#busytown .partialContainer img {
+	margin-top:40px;
+}
+
+#busytown .botSpace {
+	padding-bottom:50px;
+}
+#busytown .topSpace {
+	padding-top:40px;
+	margin-bottom:20px;
+}
+
+#busytown h1 + p.topSpace {
+	margin-top:0;
+}
+
+#busytown .col2 h1 {
+	margin:0;
+	margin-bottom:5px;
+	padding:0;
+}
+
+
+#busytown .credits  {
+	width: 720px;
+}
+
+#busytown .credits p {
+	width: 580px;
+}
+
+#busytown .credits h4 {
+	width: 110px;
+}
+
+
+
+@media only screen and (max-width: 1400px) {
+	#busytown .header .logoBox {
+		width:400px;
 	}
 	
+	#busytown .header .logoBox img  {
+		width:200px;
+	}
+	
+	#busytown .header .logoBox h2  {
+		font-size:25px;
+	}
+}
+
+
+@media only screen and (max-width: 1200px) {
+
+	#busytown .header .logoBox  {
+		bottom:25px;
+		right:25px;
+		
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	#busytown .header .logoBox h2 {
+		font-size:40px;
+		color:#fff;		
+	}
+	
+	#busytown  .header .logoBox img {
+		width:300px;
+		float:none;
+		margin:0 auto;
+		margin-bottom:10px;
+	}
+	
+	#busytown .header .logoBox {
+		text-align:center;
+		position:relative;
+		color:#fff;
+		margin:0 auto;
+		width:90%;
+		max-width:750px;		
+		right:0;
+		bottom:0;
+		margin-top:50px;
+		padding:50px;
+		background-color:#f78e26;
+		/* box-shadow: 20px 20px 0px rgba(39, 122, 110, 1), -20px -20px 0px rgba(39, 122, 110,1); */
+	}	
+	
+	#busytown .logoBox > p {
+		width:400px;
+		margin:30px auto;
+	}
+	
+	
+	#busytown .credits {
+		width:90%;
+	}
+	#busytown .credits h4 {
+		float:none;
+		text-align:left;
+		margin:0 auto;
+		width:90%;
+	}
+	
+	#busytown .credits p{
+		float:none;
+		text-align:left;
+		margin:0 auto;
+		margin-bottom:30px;
+		width:90%;
+	}	
+	
+}
+
+@media only screen and (max-width: 600px) {
+	#busytown .logoBox > p {
+		width:90%;
+		margin:30px auto;
+	}	
+	#busytown .header .logoBox img {
+		text-align:center;
+		margin-left:0;
+	}
+	
+	#busytown  h1 {
+		font-size:30px;
+	}
+	#busytown  h2 {
+		font-size:25px;
+	}
+	
+	#busytown .emph {
+		font-size:20px;
+		line-height:1.4;
+	}
 
 }
 
@@ -1300,6 +1517,13 @@ section.lightBG {
 		margin:0 auto;
 		margin-bottom:30px;
 		width:90%;
+	}
+	.download {
+		width:310px;
+	}
+
+	.download a {
+		width:150px;
 	}
 }
 
