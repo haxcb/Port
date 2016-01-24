@@ -953,6 +953,25 @@ section.lightBG {
 	letter-spacing:2px;
 }
 
+#bike img.overview {
+	margin:50px 0 20px 0;
+}
+
+.download {
+	width:350px;
+	margin:0 auto;
+	margin-bottom:50px;
+}
+
+.download a {
+	float:left;
+	width:170px;
+}
+
+.download:first-child {
+	margin-right:10px;
+}
+
 #bike .lightBG h1 {
 	color:#4c5b7f;
 }
@@ -1046,7 +1065,6 @@ section.lightBG {
 	}
 	
 	#bike  .header .logoBox img {
-
 		width:300px;
 		float:none;
 		margin:0 auto;
@@ -1118,6 +1136,14 @@ section.lightBG {
 		float:none;
 		width:100%;
 	}
+	.download {
+		width:310px;
+	}
+
+	.download a {
+		width:150px;
+	}
+	
 
 }
 
