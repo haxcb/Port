@@ -987,6 +987,26 @@ section.lightBG {
 	font-weight:300;
 }
 
+#bike .partialContainer {
+	max-width:1200px;
+}
+
+#bike .partialContainer img {
+	margin-top:40px;
+}
+
+#bike .botSpace {
+	padding-bottom:50px;
+}
+#bike .topSpace {
+	padding-top:40px;
+	margin-bottom:20px;
+}
+
+#bike h1 + p.topSpace {
+	margin-top:0;
+}
+
 #bike .col2 h1 {
 	margin:0;
 	margin-bottom:5px;
@@ -1029,6 +1049,18 @@ section.lightBG {
 #bike .micro .col2 img, #bike .micro .col3 img {
 	width:auto;
 	max-width:100%;
+}
+
+#bike .credits  {
+	width: 720px;
+}
+
+#bike .credits p {
+	width: 580px;
+}
+
+#bike .credits h4 {
+	width: 110px;
 }
 
 
@@ -1096,6 +1128,23 @@ section.lightBG {
 		float:left;
 		text-align:right;
 	}
+	#bike .credits {
+		width:90%;
+	}
+	#bike .credits h4 {
+		float:none;
+		text-align:left;
+		margin:0 auto;
+		width:90%;
+	}
+	
+	#bike .credits p{
+		float:none;
+		text-align:left;
+		margin:0 auto;
+		margin-bottom:30px;
+		width:90%;
+	}	
 	
 }
 
