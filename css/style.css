@@ -214,14 +214,17 @@ section {
 
 .works .col {
  	width:47%;
-	margin:0 2%; 
+	margin:0 2% 1.1vw 2%; 
 	float:left;
 	/* width:50%; */
 	box-sizing:border-box;
 }
 
-.works .col:nth-child(2){
+.works .col:nth-child(even){
 	margin-left:0;
+}
+.works .col:nth-child(odd){
+	margin-right:1%;
 }
 
 
@@ -290,6 +293,24 @@ section {
 
 .louvre.hvr-sweep-to-top  .caption:before  {
 	background-color:#34a393;
+}
+
+.busytown  {	
+	border-bottom:10px solid #f78e26;
+	background-color:#f78e26;
+}
+
+.busytown.hvr-sweep-to-top  .caption:before  {
+	background-color:#f78e26;
+}
+
+.bike  {	
+	border-bottom:10px solid #7d80aa;
+	background-color:#7d80aa;
+}
+
+.bike.hvr-sweep-to-top  .caption:before  {
+	background-color:#7d80aa;
 }
 
 .works .col img {

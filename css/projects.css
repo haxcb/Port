@@ -1302,11 +1302,11 @@ section.lightBG {
 }
 
 #busytown .credits p {
-	width: 580px;
+	width: 500px;
 }
 
 #busytown .credits h4 {
-	width: 110px;
+	width: 180px;
 }
 
 
@@ -1394,9 +1394,13 @@ section.lightBG {
 		width:90%;
 		margin:30px auto;
 	}	
+	#busytown .header .logoBox h2 {	
+		font-size:30px;
+	}
 	#busytown .header .logoBox img {
 		text-align:center;
-		margin-left:0;
+		margin:0 auto;
+		width:200px;
 	}
 	
 	#busytown  h1 {
