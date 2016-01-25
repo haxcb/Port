@@ -101,7 +101,6 @@ strong {
 
 section {
 	width:100%;
-	min-width:319px;
 	margin:0 auto;
 }
 
@@ -524,9 +523,10 @@ section.lightBG {
 .download a {
 	float:left;
 	width:170px;
+	margin-bottom:30px;
 }
 
-.download:first-child {
+.download a:first-child {
 	margin-right:10px;
 }
 			
@@ -1099,7 +1099,7 @@ section.lightBG {
 	}
 	
 	#bike  .header .logoBox img {
-		width:300px;
+		width:250px;
 		float:none;
 		margin:0 auto;
 		margin-bottom:10px;
@@ -1157,7 +1157,11 @@ section.lightBG {
 	}	
 	#bike .header .logoBox img {
 		text-align:center;
-		margin-left:0;
+		width:150px;
+	}
+	
+	#bike .header .logoBox h2 {
+		font-size:25px;
 	}
 	
 	#bike  h1 {
@@ -1395,12 +1399,13 @@ section.lightBG {
 		margin:30px auto;
 	}	
 	#busytown .header .logoBox h2 {	
-		font-size:30px;
+		font-size:25px;
 	}
 	#busytown .header .logoBox img {
 		text-align:center;
 		margin:0 auto;
-		width:200px;
+		margin-bottom:10px;
+		width:150px;
 	}
 	
 	#busytown  h1 {
@@ -1522,12 +1527,21 @@ section.lightBG {
 		margin-bottom:30px;
 		width:90%;
 	}
+
 	.download {
-		width:310px;
+		width:95%;
+		margin:0 auto;
+		
 	}
 
 	.download a {
-		width:150px;
+		width:49%;
+		margin-bottom:30px;
 	}
+
+	.download a:first-child {
+		margin-right:2%;
+	}
+	
 }
 

@@ -964,7 +964,8 @@ a.downLink {
 		float:none;
 	}
 	
-	.works .col:nth-child(2) {
+	.works .col:nth-child(even),
+	.works .col:nth-child(odd) {
 		margin: 0 auto;
 		margin-bottom:20px;
 	}
