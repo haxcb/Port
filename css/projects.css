@@ -966,7 +966,6 @@ section.lightBG {
 
 
 
-
 /****************************************
 	Bike Styles
 *****************************************/
@@ -1510,8 +1509,8 @@ section.lightBG {
 	padding:0;
 	line-height:80%;
 	color:#fff;
-	font-weight:600;
-	font-family:'Metronic Pro', Tahoma, Arial, sans-serif;
+	font-weight:700;
+	font-family:'Metronic', Tahoma, Arial, sans-serif;
 	margin-bottom:20px;
 }
 
@@ -1743,6 +1742,291 @@ section.lightBG {
 	}
 
 }
+
+
+
+
+
+/****************************************
+	Pixi Styles
+*****************************************/
+
+#pixi .colorBG {
+	background-color:#6D2E47;
+}
+
+#pixi .colorBG h1{
+	color:#fff;
+} 
+#pixi .colorBG p {
+	color:#fff;
+}
+
+#pixi .flushTop {
+	margin-top:0;
+	padding-top:0;
+}
+
+#pixi .loader {
+	background-color:#6D2E47;
+}
+
+#pixi .header .logoBox {
+	width:450px;
+	text-align:right;
+}
+
+#pixi  .logoBox h1 {
+	text-transform:uppercase;
+	font-size:60px;
+	margin:0;
+	padding:0;
+	line-height:90%;
+	color:#fff;
+	font-weight:300;
+	font-family:'Quicksand', Tahoma, Arial, sans-serif;
+}
+
+
+#pixi .logoBox p {
+	color:#fff;
+}
+
+#pixi .header .logoBox img {
+	margin-bottom:10px;
+	width:300px;
+}
+
+#pixi h1 {
+	color:#6D2E47;
+	font-size:40px;
+	font-weight:500;
+	margin:0;
+	margin-top:30px;
+	margin-bottom:15px;
+	letter-spacing:2px;
+}
+
+
+#pixi .lightBG h1 {
+	color:#6D2E47;
+}
+
+#pixi .emph {
+	color:#6D2E47;
+	font-style:italic;
+	font-size:30px;
+	line-height:1.1;
+}
+
+#pixi .emph.col2.leftText {
+	font-weight:300;
+}
+
+#pixi .partialContainer {
+	max-width:1200px;
+}
+
+#pixi .partialContainer img {
+	margin-top:40px;
+}
+
+#pixi .botSpace {
+	padding-bottom:50px;
+}
+#pixi .topSpace {
+	padding-top:40px;
+	margin-bottom:20px;
+}
+
+#pixi h1 + p.topSpace {
+	margin-top:0;
+}
+
+#pixi .col2 h1 {
+	margin:0;
+	margin-bottom:5px;
+	padding:0;
+}
+
+
+#pixi .micro .col2 {
+	max-width:550px;
+}
+
+#pixi .micro .col3 {
+	max-width:500px;
+}
+
+#pixi  .together {
+	max-width:700px;
+	width:auto;
+	margin:0 auto;
+}
+
+
+#pixi .together h5 {
+	margin-top:140px;
+	width:30%;
+}
+
+#pixi .together img {
+	width: 58%;
+}
+
+
+#pixi .norm {
+	width:auto;
+	max-width:100%;
+	margin:0 auto;
+	margin-top:50px;
+}
+
+#pixi .micro .col2 img, #pixi .micro .col3 img {
+	width:auto;
+	max-width:100%;
+}
+
+#pixi .credits  {
+	width: 720px;
+}
+
+#pixi .credits p {
+	width: 580px;
+}
+
+#pixi .credits h4 {
+	width: 110px;
+}
+
+
+
+@media only screen and (max-width: 1400px) {
+	#pixi .header .logoBox img  {
+		width:200px;
+	}
+	
+	#pixi .header .logoBox h2  {
+		font-size:30px;
+	}
+
+	#pixi .header .logoBox  {
+		bottom:30px;
+		right:30px;
+	}
+}
+
+
+@media only screen and (max-width: 1200px) {
+
+	#pixi .header .logoBox  {
+		bottom:25px;
+		right:25px;
+		
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	#pixi .header .logoBox h2 {
+		font-size:40px;
+		color:#fff;		
+	}
+	
+	#pixi  .header .logoBox img {
+		width:250px;
+		float:none;
+		margin:0 auto;
+		margin-bottom:10px;
+	}
+	
+	#pixi .header .logoBox {
+		text-align:center;
+		position:relative;
+		color:#fff;
+		margin:0 auto;
+		width:90%;
+		max-width:750px;		
+		right:0;
+		bottom:0;
+		margin-top:50px;
+		padding:50px;
+		background-color:#6D2E47;
+	}	
+	
+	#pixi .logoBox > p {
+		width:400px;
+		margin:30px auto;
+	}
+	
+		
+	#pixi .together .leftText {
+		float:left;
+		text-align:right;
+	}
+	#pixi .credits {
+		width:90%;
+	}
+	#pixi .credits h4 {
+		float:none;
+		text-align:left;
+		margin:0 auto;
+		width:90%;
+	}
+	
+	#pixi .credits p{
+		float:none;
+		text-align:left;
+		margin:0 auto;
+		margin-bottom:30px;
+		width:90%;
+	}	
+	
+}
+
+@media only screen and (max-width: 600px) {
+	#pixi .logoBox > p {
+		width:90%;
+		margin:30px auto;
+	}	
+	#pixi .header .logoBox img {
+		text-align:center;
+		width:150px;
+	}
+	
+	#pixi .header .logoBox h2 {
+		font-size:25px;
+	}
+	
+	#pixi  h1 {
+		font-size:30px;
+	}
+	#pixi  h2 {
+		font-size:25px;
+	}
+	
+	#pixi .emph {
+		font-size:20px;
+		line-height:1.4;
+	}
+	
+	#pixi .together {
+		width:100%;
+	}
+	
+	#pixi .together .leftText {
+		float:none;
+		text-align:center;
+		width:100%;
+		margin-top:0;
+		margin-bottom:30px;
+	}
+	#pixi .together img {
+		float:none;
+		width:100%;
+	}	
+
+}
+
 
 
 

@@ -1,11 +1,7 @@
 @font-face {
     font-family: 'Museo Sans';
-    src: url('../fonts/museosans_700-webfont.eot');
-    src: url('../fonts/museosans_700-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/museosans_700-webfont.woff2') format('woff2'),
-         url('../fonts/museosans_700-webfont.woff') format('woff'),
-         url('../fonts/museosans_700-webfont.ttf') format('truetype'),
-         url('../fonts/museosans_700-webfont.svg#museo_sans700') format('svg');
+    src: url('../fonts/museosans_700-webfont.woff2') format('woff2'),
+         url('../fonts/museosans_700-webfont.woff') format('woff');
     font-weight: bold;
     font-style: normal;
 
@@ -16,12 +12,8 @@
 
 @font-face {
     font-family: 'Museo Sans';
-    src: url('../fonts/museosans-100-webfont.eot');
-    src: url('../fonts/museosans-100-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/museosans-100-webfont.woff2') format('woff2'),
-         url('../fonts/museosans-100-webfont.woff') format('woff'),
-         url('../fonts/museosans-100-webfont.ttf') format('truetype'),
-         url('../fonts/museosans-100-webfont.svg#museo_sans100') format('svg');
+    src: url('../fonts/museosans-100-webfont.woff2') format('woff2'),
+         url('../fonts/museosans-100-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -29,36 +21,39 @@
 
 @font-face {
 	font-family: 'Gotham';
-	src: url('../fonts/Gotham-Light.eot');
-	src: url('../fonts/Gotham-Light.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/Gotham-Light.woff2') format('woff2'),
-		url('../fonts/Gotham-Light.woff') format('woff'),
-		url('../fonts/Gotham-Light.ttf') format('truetype'),
-		url('../fonts/Gotham-Light.svg#Gotham-Light') format('svg');
+	src:url('../fonts/Gotham-Light.woff2') format('woff2'),
+		url('../fonts/Gotham-Light.woff') format('woff');
 	font-weight: 100;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'Helvetica';
-	src: url('../fonts/Helvetica-Light.eot');
-	src: url('../fonts/Helvetica-Light.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/Helvetica-Light.woff2') format('woff2'),
-		url('../fonts/Helvetica-Light.woff') format('woff'),
-		url('../fonts/Helvetica-Light.ttf') format('truetype'),
-		url('../fonts/Helvetica-Light.svg#Helvetica-Light') format('svg');
+	src:url('../fonts/Helvetica-Light.woff2') format('woff2'),
+		url('../fonts/Helvetica-Light.woff') format('woff');
 	font-weight: 100;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'Futura';
-	src: url('../fonts/FuturaStd-Bold.eot');
-	src: url('../fonts/FuturaStd-Bold.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/FuturaStd-Bold.woff2') format('woff2'),
-		url('../fonts/FuturaStd-Bold.woff') format('woff'),
-		url('../fonts/FuturaStd-Bold.ttf') format('truetype'),
-		url('../fonts/FuturaStd-Bold.svg#FuturaStd-Bold') format('svg');
+	src:url('../fonts/FuturaStd-Bold.woff2') format('woff2'),
+		url('../fonts/FuturaStd-Bold.woff') format('woff');
 	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face{
+	font-family:'Metronic';
+	src:url('../fonts/Metronic-Bold.woff') format("woff");
+	font-weight:700;
+	font-style:normal;
+}
+
+@font-face {
+	font-family: 'Quicksand';
+	src:url('../fonts/Quicksand-300.woff2') format('woff2'),
+		url('../fonts/Quicksand-300.woff') format('woff');
+	font-weight:300;
 	font-style: normal;
 }
