@@ -274,6 +274,23 @@ h5 {
 
 }
 
+.forceShadow {
+	position:relative;
+}
+
+
+.forceShadow:before {
+	content: " ";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    bottom: -20px;
+	left:20px;
+	z-index:-1;
+	background-color:rgba(0,0,0,0.2);
+}
+
 
 
 
@@ -1752,7 +1769,9 @@ section.lightBG {
 *****************************************/
 
 #pixi .colorBG {
-	background-color:#6D2E47;
+	background-color:#6D2E47;		
+	position:relative; /* Need for z-index to be respected */
+	z-index:-50;
 }
 
 #pixi .colorBG h1{
