@@ -1204,14 +1204,12 @@ section.lightBG {
 	#bike .credits h4 {
 		float:none;
 		text-align:left;
-		margin:0 auto;
 		width:90%;
 	}
 	
 	#bike .credits p{
 		float:none;
 		text-align:left;
-		margin:0 auto;
 		margin-bottom:30px;
 		width:90%;
 	}	
@@ -1447,14 +1445,12 @@ section.lightBG {
 	#busytown .credits h4 {
 		float:none;
 		text-align:left;
-		margin:0 auto;
 		width:90%;
 	}
 	
 	#busytown .credits p{
 		float:none;
 		text-align:left;
-		margin:0 auto;
 		margin-bottom:30px;
 		width:90%;
 	}	
@@ -1699,24 +1695,7 @@ section.lightBG {
 		float:left;
 		text-align:right;
 	}
-	
-	#hgc .credits {
-		width:90%;
-	}
-	#hgc .credits h4 {
-		float:none;
-		text-align:left;
-		margin:0 auto;
-		width:90%;
-	}
-	
-	#hgc .credits p{
-		float:none;
-		text-align:left;
-		margin:0 auto;
-		margin-bottom:30px;
-		width:90%;
-	}	
+
 	
 }
 
@@ -1757,6 +1736,23 @@ section.lightBG {
 		float:none;
 		width:100%;
 	}
+	
+		
+	#hgc .credits {
+		width:90%;
+	}
+	#hgc .credits h4 {
+		float:none;
+		text-align:left;
+		width:90%;
+	}
+	
+	#hgc .credits p{
+		float:none;
+		text-align:left;
+		margin-bottom:30px;
+		width:90%;
+	}	
 
 }
 
@@ -1862,38 +1858,6 @@ section.lightBG {
 	margin-top:0;
 }
 
-#pixi .col2 h1 {
-	margin:0;
-	margin-bottom:5px;
-	padding:0;
-}
-
-
-#pixi .micro .col2 {
-	max-width:550px;
-}
-
-#pixi .micro .col3 {
-	max-width:500px;
-}
-
-#pixi  .together {
-	max-width:700px;
-	width:auto;
-	margin:0 auto;
-}
-
-
-#pixi .together h5 {
-	margin-top:140px;
-	width:30%;
-}
-
-#pixi .together img {
-	width: 58%;
-}
-
-
 #pixi .norm {
 	width:auto;
 	max-width:100%;
@@ -1901,17 +1865,12 @@ section.lightBG {
 	margin-top:50px;
 }
 
-#pixi .micro .col2 img, #pixi .micro .col3 img {
-	width:auto;
-	max-width:100%;
-}
-
 #pixi .credits  {
-	width: 720px;
+	width: 610px;
 }
 
 #pixi .credits p {
-	width: 580px;
+	width: 470px;
 }
 
 #pixi .credits h4 {
@@ -1982,20 +1941,21 @@ section.lightBG {
 		float:left;
 		text-align:right;
 	}
+	
+		
 	#pixi .credits {
 		width:90%;
 	}
+	
 	#pixi .credits h4 {
 		float:none;
 		text-align:left;
-		margin:0 auto;
 		width:90%;
 	}
 	
 	#pixi .credits p{
 		float:none;
 		text-align:left;
-		margin:0 auto;
 		margin-bottom:30px;
 		width:90%;
 	}	
@@ -2028,22 +1988,6 @@ section.lightBG {
 		line-height:1.4;
 	}
 	
-	#pixi .together {
-		width:100%;
-	}
-	
-	#pixi .together .leftText {
-		float:none;
-		text-align:center;
-		width:100%;
-		margin-top:0;
-		margin-bottom:30px;
-	}
-	#pixi .together img {
-		float:none;
-		width:100%;
-	}	
-
 }
 
 
@@ -2144,14 +2088,12 @@ section.lightBG {
 	.credits h4 {
 		float:none;
 		text-align:left;
-		margin:0 auto;
 		width:90%;
 	}
 	
 	.credits p{
 		float:none;
 		text-align:left;
-		margin:0 auto;
 		margin-bottom:30px;
 		width:90%;
 	}
