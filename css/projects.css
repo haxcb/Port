@@ -1574,6 +1574,10 @@ section.lightBG {
 	font-weight:300;
 }
 
+#hgc .colorBG .partialContainer {
+	margin-top:30px;
+}
+
 #hgc .col2 h1 {
 	margin:0;
 	margin-bottom:5px;
