@@ -135,6 +135,7 @@ strong {
 	font-weight:600;
 }
 
+
 .left {
 	float:left;
 }
@@ -259,21 +260,44 @@ h5 {
 
 .col2 {
 	width:48%;
+	position:relative;
 }
 
 .col3 {
 	width:33%;
+	position:relative;
 }
 
-.leftText {
-	float:left;
-	text-align:right;
+.flex-row {
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	position:relative;
+}
+
+.flex-row-center {
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+}
+
+.flex-row-center .rightText {
 	margin-right:4%;
 }
 
 .rightText {
-	float:right;
+	text-align:right;
+}
+
+.leftText {
 	text-align:left;
+}
+
+.narrowText {
+	width:75%;
+	position:absolute;
+	right:0;
+	color:#888;
 }
 
 
@@ -319,6 +343,10 @@ h5 {
 	margin-top:50px;
 }
 
+.infoPane {
+	padding:50px 0;
+}
+
 
 .clearBot {
 	padding-bottom:0;
@@ -342,6 +370,19 @@ h5 {
 
 .text p {
 	margin-top:30px;
+}
+
+p.textSmol {
+	font-size:21px;
+	line-height:1.5;
+	margin:0;
+}
+
+.emph {
+	font-style:italic;
+	font-size:24px;
+	line-height:1.4;
+	font-weight:600;
 }
 
 section.lightBG {
@@ -662,9 +703,6 @@ section.lightBG {
 
 #louvre .emph {
 	color:#34a393;
-	font-style:italic;
-	font-size:30px;
-	line-height:1.1;
 }
 
 #louvre .col2 h1 {
@@ -830,13 +868,6 @@ section.lightBG {
 
 #natgeo .emph {
 	color:#a08100;
-	font-style:italic;
-	font-size:30px;
-	line-height:1.1;
-}
-
-#natgeo .emph.col2.leftText {
-	font-weight:300;
 }
 
 #natgeo .col2 h1 {
@@ -1056,13 +1087,6 @@ section.lightBG {
 
 #bike .emph {
 	color:#3D5599;
-	font-style:italic;
-	font-size:30px;
-	line-height:1.1;
-}
-
-#bike .emph.col2.leftText {
-	font-weight:300;
 }
 
 #bike .partialContainer {
@@ -1339,13 +1363,7 @@ section.lightBG {
 
 #busytown .emph {
 	color:#f05a28;
-	font-style:italic;
-	font-size:30px;
-	line-height:1.1;
-}
 
-#busytown .emph.col2.leftText {
-	font-weight:300;
 }
 
 #busytown .partialContainer {
@@ -1573,13 +1591,6 @@ section.lightBG {
 
 #hgc .emph {
 	color:#522E99;
-	font-style:italic;
-	font-size:30px;
-	line-height:1.1;
-}
-
-#hgc .emph.col2.leftText {
-	font-weight:300;
 }
 
 #hgc .colorBG .partialContainer {
@@ -1841,14 +1852,8 @@ section.lightBG {
 
 #pixi .emph {
 	color:#6D2E47;
-	font-style:italic;
-	font-size:30px;
-	line-height:1.1;
 }
 
-#pixi .emph.col2.leftText {
-	font-weight:300;
-}
 
 #pixi .partialContainer {
 	max-width:1200px;
@@ -2085,13 +2090,6 @@ section.lightBG {
 
 #shadowlands .emph {
 	color:#1E2740;
-	font-style:italic;
-	font-size:30px;
-	line-height:1.1;
-}
-
-#shadowlands .emph.col2.leftText {
-	font-weight:300;
 }
 
 #shadowlands .colorBG .partialContainer {
@@ -2342,6 +2340,14 @@ section.lightBG {
 	}
 	.rightText {
 		float:none;
+		margin-bottom:30px;
+	}
+
+	.flex-row {
+		flex-direction: column;
+	}
+
+	.flex-row .col2:not(:last-child) {
 		margin-bottom:30px;
 	}
 
