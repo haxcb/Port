@@ -77,6 +77,7 @@ button, button:active, button:visited {
 	-o-transition:all 0.3s;
 	-moz-transition:all 0.3s;
 	transition:all 0.3s;
+	width:100%;
 }
 
 
@@ -89,6 +90,13 @@ button:hover {
 	
 	-webkit-backface-visibility: visible;
 	backface-visibility: visible;
+}
+
+button .icon {
+	display:inline;
+	width:initial;
+	height:initial;
+	padding:0 3px;
 }
 
 h1 {
@@ -124,7 +132,7 @@ img {
 }
 
 strong {
-	font-weight:700;
+	font-weight:600;
 }
 
 .left {
@@ -1992,6 +2000,285 @@ section.lightBG {
 		line-height:1.4;
 	}
 	
+}
+
+
+
+
+/****************************************
+	shadowlands Styles
+*****************************************/
+
+#shadowlands .colorBG {
+	background-color:#1E2740;
+}
+
+#shadowlands .colorBG h1{
+	color:#fff;
+} 
+#shadowlands .colorBG p {
+	color:#fff;
+}
+
+#shadowlands .flushTop {
+	margin-top:0;
+	padding-top:0;
+}
+
+#shadowlands .loader {
+	background-color:#1E2740;
+}
+
+#shadowlands .header .logoBox {
+	width:400px;
+	right:140px;
+}
+
+#shadowlands .logoBox h1, #shadowlands  .logoBox h2 {
+	text-transform:uppercase;
+	font-size:30px;
+	margin:0;
+	padding:0;
+	line-height:80%;
+	color:#fff;
+	font-weight:700;
+	font-family:'Metronic', Tahoma, Arial, sans-serif;
+	margin-bottom:20px;
+}
+
+#shadowlands .logoBox p {
+	color:#fff;
+	text-align:center;
+}
+
+#shadowlands .header .logoBox h1 {
+	font-size:20px;
+	margin-bottom:10px;
+}
+
+#shadowlands .header .logoBox img {
+	margin-bottom:20px;
+	width:400px;
+}
+
+#shadowlands h1 {
+	color:#1E2740;
+	font-size:40px;
+	font-weight:500;
+	margin:0;
+	margin-top:30px;
+	margin-bottom:15px;
+	letter-spacing:2px;
+}
+
+#shadowlands .video {
+	margin-bottom:30px;
+	margin-top:50px;
+}
+
+#shadowlands .button{
+	margin:20px auto 50px auto;
+	width:260px;
+	display:block;
+}
+
+
+#shadowlands .emph {
+	color:#1E2740;
+	font-style:italic;
+	font-size:30px;
+	line-height:1.1;
+}
+
+#shadowlands .emph.col2.leftText {
+	font-weight:300;
+}
+
+#shadowlands .colorBG .partialContainer {
+	margin-top:30px;
+}
+
+#shadowlands .col2 h1 {
+	margin:0;
+	margin-bottom:5px;
+	padding:0;
+}
+
+
+#shadowlands .micro .col2 {
+	max-width:550px;
+}
+
+#shadowlands .micro .col3 {
+	max-width:500px;
+}
+
+#shadowlands  .together {
+	max-width:700px;
+	width:auto;
+	margin:0 auto;
+}
+
+
+#shadowlands .together h5 {
+	margin-top:140px;
+	width:30%;
+}
+
+#shadowlands .together img {
+	width: 58%;
+}
+
+
+#shadowlands .norm {
+	width:auto;
+	max-width:100%;
+	margin:0 auto;
+	margin-top:50px;
+}
+
+#shadowlands .micro .col2 img, #shadowlands .micro .col3 img {
+	width:auto;
+	max-width:100%;
+}
+
+#shadowlands .credits  {
+	width: 490px;
+}
+
+#shadowlands .credits p {
+	width: 340px;
+}
+
+#shadowlands .credits h4 {
+	width: 120px;
+}
+
+@media only screen and (max-width: 1550px) {
+	#shadowlands .header .logoBox {
+		right:100px;
+		bottom:40px;
+	}
+}
+
+@media only screen and (max-width: 1350px) {
+	#shadowlands .header .logoBox  {
+		width:390px;
+		right: 50px;
+	}
+
+}
+
+@media only screen and (max-width: 1100px) {
+	#shadowlands .header .logoBox  {
+		bottom:25px;
+		right:15px;
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	#shadowlands .header .logoBox h2 {
+		font-size:30px;
+		line-height:110%;
+	}
+	
+	#shadowlands  .header .logoBox h1 {
+		font-size:20px;
+		margin-bottom:5px;
+	}
+	
+	#shadowlands .header .logoBox {
+		text-align:center;
+		position:relative;
+		color:#000;
+		margin:0 auto;
+		width:90%;
+		max-width:750px;		
+		right:0;
+		bottom:0;
+		margin-top:50px;
+		padding:50px;
+		background-color:#1E2740;
+		/* box-shadow: 20px 20px 0px rgba(39, 122, 110, 1), -20px -20px 0px rgba(39, 122, 110,1); */
+	}	
+	
+	#shadowlands .header .logoBox img {
+		margin:0 auto;
+		margin-bottom:40px;
+	}
+	
+	#shadowlands .logoBox > p {
+		width:400px;
+		margin:30px auto;
+	}
+	
+	#shadowlands .partialContainer .right {
+		margin-top:100px;
+	}
+		
+	#shadowlands .together .leftText {
+		float:left;
+		text-align:right;
+	}
+
+	
+}
+
+@media only screen and (max-width: 600px) {
+	#shadowlands .logoBox > p {
+		width:90%;
+		margin:30px auto;
+	}	
+	#shadowlands .header .logoBox h1 {
+		text-align:center;
+		margin-left:0;
+	}
+	
+	#shadowlands  h1 {
+		font-size:30px;
+	}
+	#shadowlands  h2 {
+		font-size:25px;
+	}
+	
+	#shadowlands .emph {
+		font-size:20px;
+		line-height:1.4;
+	}
+	
+	#shadowlands .together {
+		width:100%;
+	}
+	
+	#shadowlands .together .leftText {
+		float:none;
+		text-align:center;
+		width:100%;
+		margin-top:0;
+		margin-bottom:30px;
+	}
+	#shadowlands .together img {
+		float:none;
+		width:100%;
+	}
+	
+		
+	#shadowlands .credits {
+		width:90%;
+	}
+	#shadowlands .credits h4 {
+		float:none;
+		text-align:left;
+		width:90%;
+	}
+	
+	#shadowlands .credits p{
+		float:none;
+		text-align:left;
+		margin-bottom:30px;
+		width:90%;
+	}	
+
 }
 
 
