@@ -237,14 +237,15 @@ nav a:hover {
 	overflow: hidden; 
 	max-width: 100%; 
 	height: auto; 
-	margin:70px 0;
+	margin:0;
+	margin-bottom:70px;
 } 
 	
 .video iframe, .embed-container object, .embed-container embed {
 	position: absolute; 
 	top: 0; left: 0; 
 	width: 100%; 
-	height: 100%; 
+	/* height: 100%;  */
 }
 
 
@@ -634,6 +635,12 @@ section.lightBG {
 .flushTop {
 	margin-top:0;
 	padding-top:0;
+}
+
+
+.flushBot {
+	margin-bottom:0;
+	padding-bottom:0;
 }
 
 
@@ -2026,11 +2033,6 @@ section.lightBG {
 	color:#fff;
 }
 
-#shadowlands .flushTop {
-	margin-top:0;
-	padding-top:0;
-}
-
 #shadowlands .loader {
 	background-color:#1E2740;
 }
@@ -2077,15 +2079,14 @@ section.lightBG {
 	letter-spacing:2px;
 }
 
-#shadowlands .video {
-	margin-bottom:30px;
-	margin-top:50px;
-}
-
 #shadowlands .button{
 	margin:20px auto 50px auto;
 	width:260px;
 	display:block;
+}
+
+#shadowlands .navVideo {
+	padding-bottom:40%;
 }
 
 
@@ -2142,15 +2143,20 @@ section.lightBG {
 }
 
 #shadowlands .credits  {
-	width: 490px;
+	width: 540px;
 }
 
 #shadowlands .credits p {
-	width: 340px;
+	width: 390px;
 }
 
 #shadowlands .credits h4 {
 	width: 120px;
+}
+
+#shadowlands .flushTop {
+	margin-top:0;
+	padding-top:0;
 }
 
 @media only screen and (max-width: 1550px) {
