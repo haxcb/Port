@@ -237,15 +237,15 @@ nav a:hover {
 	overflow: hidden; 
 	max-width: 100%; 
 	height: auto; 
-	margin:0;
-	margin-bottom:70px;
+	margin:70px 0;
 } 
 	
 .video iframe, .embed-container object, .embed-container embed {
 	position: absolute; 
-	top: 0; left: 0; 
+	top: 0; 
+	left: 0; 
 	width: 100%; 
-	/* height: 100%;  */
+	height: 100%; 
 }
 
 
@@ -2087,8 +2087,9 @@ section.lightBG {
 
 #shadowlands .navVideo {
 	padding-bottom:40%;
+	margin:0;
+	margin-bottom:80px;
 }
-
 
 #shadowlands .emph {
 	color:#1E2740;
