@@ -349,7 +349,7 @@ h5 {
 	padding-bottom:80px;
 }
 
-.partialContainer img {
+.partialContainer .shadow {
 	margin-top:50px;
 }
 
@@ -1613,9 +1613,6 @@ section.lightBG {
 	color:#522E99;
 }
 
-#hgc .colorBG .partialContainer {
-	margin-top:30px;
-}
 
 #hgc .col2 h1 {
 	margin:0;
@@ -1732,10 +1729,7 @@ section.lightBG {
 		width:400px;
 		margin:30px auto;
 	}
-	
-	#hgc .partialContainer .right {
-		margin-top:100px;
-	}
+
 		
 	#hgc .together .leftText {
 		float:left;
@@ -2145,6 +2139,11 @@ section.lightBG {
 	width: 58%;
 }
 
+#shadowlands .btnVid {
+	padding-bottom:42%;
+	margin:0;
+}
+
 
 #shadowlands .norm {
 	width:auto;
@@ -2153,10 +2152,6 @@ section.lightBG {
 	margin-top:50px;
 }
 
-#shadowlands .micro .col2 img, #shadowlands .micro .col3 img {
-	width:auto;
-	max-width:100%;
-}
 
 #shadowlands .credits  {
 	width: 540px;
