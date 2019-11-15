@@ -157,6 +157,14 @@ strong {
 	margin-top:30px;
 }
 
+.bad {
+	color:#B37171;
+}
+
+.good {
+	color:#65B300;
+}
+
 section {
 	width:100%;
 	margin:0 auto;
@@ -1547,6 +1555,11 @@ section.lightBG {
 
 #hgc .header .logoBox {
 	width:500px;
+	right:8%;
+}
+
+#hgc .logoBox img {
+	margin: 0 auto;
 }
 
 #hgc .logoBox h1, #hgc  .logoBox h2 {
@@ -1585,9 +1598,8 @@ section.lightBG {
 	letter-spacing:2px;
 }
 
-#hgc .video {
-	margin-bottom:30px;
-	margin-top:50px;
+#hgc .overview {
+	margin: 50px 0;
 }
 
 #hgc .button{
@@ -1620,7 +1632,7 @@ section.lightBG {
 	max-width:500px;
 }
 
-#hgc  .together {
+#hgc .together {
 	max-width:700px;
 	width:auto;
 	margin:0 auto;
@@ -1636,12 +1648,15 @@ section.lightBG {
 	width: 58%;
 }
 
+#hgc .offset {
+	margin-top:-100px
+}
 
 #hgc .norm {
 	width:auto;
 	max-width:100%;
 	margin:0 auto;
-	margin-top:50px;
+	margin-top:10px
 }
 
 #hgc .micro .col2 img, #hgc .micro .col3 img {
