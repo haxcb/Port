@@ -2245,6 +2245,12 @@ section.lightBG {
 		width:90%;
 		margin:30px auto;
 	}	
+
+	#shadowlands .header .logoBox img {
+		margin-bottom:20px;
+		width:330px;
+	}
+
 	#shadowlands .header .logoBox h1 {
 		text-align:center;
 		margin-left:0;
