@@ -655,13 +655,12 @@ section.lightBG {
 .download {
 	width:350px;
 	margin:0 auto;
-	margin-bottom:50px;
+	margin-bottom:60px;
 }
 
 .download a {
 	float:left;
 	width:170px;
-	margin-bottom:30px;
 }
 
 .download a:first-child {
@@ -1067,7 +1066,7 @@ section.lightBG {
 	text-align:right;
 }
 
-#bike  .logoBox h2 {
+#bike .logoBox h2 {
 	text-transform:uppercase;
 	font-size:40px;
 	margin:0;
@@ -2305,6 +2304,163 @@ section.lightBG {
 
 
 
+/****************************************
+	HSJ Styles
+*****************************************/
+
+#hsj .colorBG, #hsj .loader {
+	background-color:#85442F;
+}
+
+#hsj .header .logoBox {
+	width:500px;
+	right:3%;
+}
+
+#hsj .logoBox img {
+	margin: 0 auto;
+}
+
+#hsj .logoBox h1, #hsj .logoBox h2 {
+	text-transform:uppercase;
+	font-size:30px;
+	margin:0;
+	padding:0;
+	line-height:80%;
+	color:#fff;
+	font-weight:700;
+	font-family:'Futura', Tahoma, Arial, sans-serif;
+	margin-bottom:20px;
+}
+
+#hsj .logoBox p {
+	color:#fff;
+}
+
+#hsj .download {
+	width: 540px;
+}
+
+#hsj .download a {
+	margin-left:10px;
+}
+
+#hsj .download a:first-child {
+	margin-left:0px;
+}
+
+#hsj .header .logoBox h1 {
+	font-size:20px;
+	margin-bottom:10px;
+}
+
+#hsj .header .logoBox img {
+	margin-bottom:0px;
+	width:350px;
+}
+
+#hsj h1 {
+	color:#85442F;
+	font-size:40px;
+	font-weight:500;
+	margin:0;
+	margin-top:30px;
+	margin-bottom:15px;
+	letter-spacing:2px;
+}
+
+#hsj .emph {
+	color:#85442F;
+}
+
+#hsj .colorBG h1{
+	color:#fff;
+} 
+#hsj .colorBG p {
+	color:#fff;
+}
+
+
+
+@media only screen and (max-width: 1750px) {
+	#hsj .header .logoBox {
+		width:350px;
+		right:40px;
+		bottom:40px;
+	}
+}
+
+@media only screen and (max-width: 1500px) {
+	#hsj .header .logoBox  {
+		bottom:20px;
+		right:15px;
+		width:390px;
+	}
+
+	#hsj .header .logoBox img {
+		width:70%;
+	}
+
+	#hsj .header .logoBox h2 {
+		font-size: 25px;
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	#hsj .header .logoBox h2 {
+		font-size:30px;
+		line-height:110%;
+	}
+	
+	#hsj  .header .logoBox h1 {
+		font-size:20px;
+		margin-bottom:5px;
+	}
+	
+	#hsj .header .logoBox {
+		text-align:center;
+		position:relative;
+		color:#000;
+		margin:0 auto;
+		width:90%;
+		max-width:750px;		
+		right:0;
+		bottom:0;
+		margin-top:50px;
+		padding:50px;
+		background-color:#85442F;
+	}	
+	
+	#hsj .header .logoBox img {
+		margin:0 auto;
+	}
+	
+	#hsj .logoBox > p {
+		width:90%;
+		margin:30px auto;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+
+	#hsj .download {
+		width: 96%;
+	}
+
+	#hsj .download a {
+		width: 32%;
+		margin:0;
+	}
+
+	#hsj .download a {
+		margin-left:2%;
+	}
+	#hsj .download a:first-child {
+		margin-left:0%;
+	}
+
+}
+
 
 
 
@@ -2427,7 +2583,6 @@ section.lightBG {
 
 	.download a {
 		width:49%;
-		margin-bottom:30px;
 	}
 
 	.download a:first-child {
