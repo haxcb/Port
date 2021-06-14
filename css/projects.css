@@ -807,9 +807,6 @@ section.lightBG {
 		font-size:30px;
 	}	
 	
-	#louvre  h2 {
-		font-size:25px;
-	}
 	#louvre .emph {
 		font-size:20px;
 		line-height:1.4;
@@ -2613,6 +2610,11 @@ section.lightBG {
 		font-size:20px;
 	}
 	
+	h2 {
+		font-size:25px;
+		line-height:110%;
+	}
+
 	h5 {
 		font-size:16px;
 	}
