@@ -654,7 +654,7 @@ section.lightBG {
 
 .download {
 	width:350px;
-	margin:0 auto;
+	margin:0 auto 50px auto;
 	margin-bottom:60px;
 }
 
@@ -2247,12 +2247,16 @@ section.lightBG {
 
 	#shadowlands .header .logoBox img {
 		margin-bottom:20px;
-		width:330px;
+		width:100%;
 	}
 
 	#shadowlands .header .logoBox h1 {
 		text-align:center;
 		margin-left:0;
+	}
+
+	#shadowlands .button {
+		width:100%;
 	}
 	
 	#shadowlands  h1 {
@@ -2380,7 +2384,26 @@ section.lightBG {
 	color:#fff;
 }
 
+#hsj .partialContainer {
+	max-width:1200px;
+}
 
+#hsj .partialContainer img
+{
+	margin-top:40px;
+}
+
+#hsj .flushTop {
+	margin-top:0;
+	padding-top:0;
+}
+
+#hsj .credits {
+	width:630px;
+}
+#hsj .credits p {
+	width:500px;
+}
 
 @media only screen and (max-width: 1750px) {
 	#hsj .header .logoBox {
@@ -2457,6 +2480,21 @@ section.lightBG {
 	}
 	#hsj .download a:first-child {
 		margin-left:0%;
+	}
+
+	#hsj h1 {
+		font-size:30px;
+	}
+
+	#hsj .credits {
+		width: 90%;
+	}
+
+	#hsj .credits p {
+		float: none;
+		text-align: left;
+		margin-bottom: 30px;
+		width: 90%;
 	}
 
 }
@@ -2544,6 +2582,10 @@ section.lightBG {
 }
 
 @media only screen and (max-width: 600px) {
+	p {
+		font-size:20px;
+	}
+	
 	.text {
 		font-size:20px;
 	}
@@ -2577,7 +2619,7 @@ section.lightBG {
 
 	.download {
 		width:95%;
-		margin:0 auto;
+		margin:0 auto 50px auto;
 		
 	}
 
