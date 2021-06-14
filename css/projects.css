@@ -1556,6 +1556,11 @@ section.lightBG {
 	width:500px;
 	right:8%;
 }
+#hgc h2 {
+	-webkit-hyphens: manual;
+	-ms-hyphens: manual;
+	hyphens: manual;
+}
 
 #hgc .logoBox img {
 	margin: 0 auto;
@@ -1739,6 +1744,11 @@ section.lightBG {
 }
 
 @media only screen and (max-width: 600px) {
+	#hgc .header .logoBox img {
+		width:100%;
+		max-width:150px;
+	}
+	
 	#hgc .logoBox > p {
 		width:90%;
 		margin:30px auto;
@@ -1746,6 +1756,11 @@ section.lightBG {
 	#hgc .header .logoBox h1 {
 		text-align:center;
 		margin-left:0;
+		line-height:110%;
+
+	}
+	#hgc .header .logoBox h2 {
+		font-size:20px;
 	}
 	
 	#hgc  h1 {
@@ -2313,7 +2328,7 @@ section.lightBG {
 *****************************************/
 
 #hsj .colorBG, #hsj .loader {
-	background-color:#85442F;
+	background-color:#56211d;
 }
 
 #hsj .header .logoBox {
@@ -2364,7 +2379,7 @@ section.lightBG {
 }
 
 #hsj h1 {
-	color:#85442F;
+	color:#56211d;
 	font-size:40px;
 	font-weight:500;
 	margin:0;
@@ -2374,7 +2389,7 @@ section.lightBG {
 }
 
 #hsj .emph {
-	color:#85442F;
+	color:#56211d;
 }
 
 #hsj .colorBG h1{
@@ -2451,7 +2466,7 @@ section.lightBG {
 		bottom:0;
 		margin-top:50px;
 		padding:50px;
-		background-color:#85442F;
+		background-color:#56211d;
 	}	
 	
 	#hsj .header .logoBox img {
