@@ -2356,6 +2356,10 @@ section.lightBG {
 	color:#fff;
 }
 
+#hsj .video {
+	margin: 50px auto 20px auto;
+}
+
 #hsj .download {
 	width: 540px;
 }
