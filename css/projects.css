@@ -2356,6 +2356,10 @@ section.lightBG {
 	color:#fff;
 }
 
+#hsj .video {
+	margin: 50px auto 20px auto;
+}
+
 #hsj .download {
 	width: 540px;
 }
@@ -2480,6 +2484,10 @@ section.lightBG {
 }
 
 @media only screen and (max-width: 600px) {
+
+	#hsj .header .logoBox h2 {
+		font-size:18px;
+	}
 
 	#hsj .download {
 		width: 96%;
