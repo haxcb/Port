@@ -715,12 +715,6 @@ section.lightBG {
 	letter-spacing:2px;
 }
 
-#louvre h2 {
-	-webkit-hyphens: manual;
-	-ms-hyphens: manual;
-	hyphens: manual;
-}
-
 
 #louvre .emph {
 	color:#34a393;
@@ -790,8 +784,7 @@ section.lightBG {
 		right:0;
 		bottom:0;
 		margin-top:50px;
-		padding:20px;
-		padding-top:50px;
+		padding:50px;
 		background-color:#34a393;
 		/* box-shadow: 20px 20px 0px rgba(39, 122, 110, 1), -20px -20px 0px rgba(39, 122, 110,1); */
 	}	
@@ -813,10 +806,6 @@ section.lightBG {
 	#louvre  h1 {
 		font-size:30px;
 	}	
-
-	#louvre .header h1, #louvre .header h2 {
-		font-size:35px;
-	}
 	
 	#louvre .emph {
 		font-size:20px;
@@ -985,8 +974,7 @@ section.lightBG {
 		right:0;
 		bottom:0;
 		margin-top:50px;
-		padding:20px;
-		padding-top:50px;
+		padding:50px;
 		background-color:#ffdd33;
 		/* box-shadow: 20px 20px 0px rgba(39, 122, 110, 1), -20px -20px 0px rgba(39, 122, 110,1); */
 	}	
@@ -1239,8 +1227,7 @@ section.lightBG {
 		right:0;
 		bottom:0;
 		margin-top:50px;
-		padding:20px;
-		padding-top:50px;
+		padding:50px;
 		background-color:#3D5599;
 		/* box-shadow: 20px 20px 0px rgba(39, 122, 110, 1), -20px -20px 0px rgba(39, 122, 110,1); */
 	}	
@@ -1479,8 +1466,7 @@ section.lightBG {
 		right:0;
 		bottom:0;
 		margin-top:50px;
-		padding:20px;
-		padding-top:50px;
+		padding:50px;
 		background-color:#f78e26;
 		/* box-shadow: 20px 20px 0px rgba(39, 122, 110, 1), -20px -20px 0px rgba(39, 122, 110,1); */
 	}	
@@ -1730,8 +1716,7 @@ section.lightBG {
 		right:0;
 		bottom:0;
 		margin-top:50px;
-		padding:20px;
-		padding-top:50px;
+		padding:50px;
 		background-color:#522E99;
 		/* box-shadow: 20px 20px 0px rgba(39, 122, 110, 1), -20px -20px 0px rgba(39, 122, 110,1); */
 	}	
@@ -1803,9 +1788,6 @@ section.lightBG {
 		width:100%;
 	}
 	
-	#hgc .offset {
-		margin-top:-60px;
-	}
 		
 	#hgc .credits {
 		width:90%;
@@ -1990,8 +1972,7 @@ section.lightBG {
 		right:0;
 		bottom:0;
 		margin-top:50px;
-		padding:20px;
-		padding-top:50px;
+		padding:50px;
 		background-color:#6D2E47;
 	}	
 	
@@ -2243,8 +2224,7 @@ section.lightBG {
 		right:0;
 		bottom:0;
 		margin-top:50px;
-		padding:20px;
-		padding-top:50px;
+		padding:50px;
 		background-color:#1E2740;
 		/* box-shadow: 20px 20px 0px rgba(39, 122, 110, 1), -20px -20px 0px rgba(39, 122, 110,1); */
 	}	
@@ -2486,8 +2466,7 @@ section.lightBG {
 		right:0;
 		bottom:0;
 		margin-top:50px;
-		padding:20px;
-		padding-top:50px;
+		padding:50px;
 		background-color:#56211d;
 	}	
 	
