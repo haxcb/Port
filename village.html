@@ -57,7 +57,7 @@
 		<section class="colorBG">
 			<div class="container text clearBot">
 				<h1 class="center">A Closer Look at the Systems</h1>
-				<p class="center">A player’s Mercenaries will visit the Campfire in the Village with tasks to complete containing light story & dialogue.</p>
+				<p class="center"><strong>The Campfire:</strong></The> A collection of task chains from each Mercenary that contains light story and dialogue.</p>
 			</div>
 			<div class="partialContainer clearBot">
 				<img class="left col2 shadow" src="images/hsm/screen1.png" alt="UI of the Campfire (aka Task Board)" />
@@ -66,29 +66,77 @@
 			</div>
 			
 			<div class="container text topSpace clearBot">
-				<p class="center">The Workshop is another progression system in the Village that allows players to upgrade their buildings to unlock new functionality.</p>
+				<p class="center"><strong>The Workshop:</strong> Additional goals to provide players with direction in their gameplay. Completing Workshop goals unlock new or upgraded buildings in the Village.</p>
+			</div>
+
+
+			<div class="partialContainer clearBot">
+				<img class="left col2 shadow" src="images/hsm/screen3.png" alt="UI of the Workshop, where players can build new buildings" />
+				<div class="right col2 shadow"> 
+					<div class="video">
+						<iframe src="https://player.vimeo.com/video/755982275?byline=0&autoplay=1&loop=1&portrait=0&muted=1&background=1&autopause=false&controls=false" width="1000" height="562" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen allow="autoplay"></iframe>
+						<script src="https://player.vimeo.com/api/player.js"></script>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			
+			<div class="container text topSpace clearBot">
+				<p class="center"><strong>The Training Grounds:</strong> An area where Mercenaries can be assigned to slots to gain experience passively.</p>
 			</div>
 
 
 			<div class="partialContainer">
-				<img class="shadow" src="images/hsm/screen3.png" alt="Rewards Track Screen at Level 21" />
+				<img class="left col2 shadow" src="images/hsm/screen4.png" alt="UI of the Workshop, where players can build new buildings" />
+				<div class="right col2 shadow"> 
+					<div class="video">
+						<iframe src="https://player.vimeo.com/video/755986752?byline=0&autoplay=1&loop=1&portrait=0&muted=1&background=1&autopause=false&controls=false" width="1000" height="562" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen allow="autoplay"></iframe>
+						<script src="https://player.vimeo.com/api/player.js"></script>
+					</div>
+				</div>
+				<div class="clear"></div>
 			</div>
 
 		</section>
 		
-		<section class="lightBG noTitle">
-			<div class="partialContainer clearBot">
-				<img class="left col2" src="images/lo/screen3.png" alt="Louvre Memories Begin Act Screen" />
-				<img class="right col2" src="images/lo/screen4.png" alt="Louvre Memories Wayfinding Screen" />
-				<div class="clear"></div>
-			</div>
+		<section class="lightBG noTitle micro">
 			<div class="container text">
 				<h5>Design Process</h5>
-				<h1 class="flushTop">Why Story&shy;telling & Way&shy;finding?</h1>
-				<p>We identified two glaring issues that detracted from the average visitor's experience in the Louvre. Firstly, information about artwork was not easily understandable for most pieces beyond the museum's top three works (ie. Mona Lisa). Secondly, considering the massive size of the Louvre, navigating through the museum was a source of frustration for visitors. </p>
+				<h1 class="flushTop">The Villagers</h1>
+				<p>One of the challenges of this feature was finding the right layout for the Village. It needed to display 9 buildings and 6 Mercenaries on a single screen so that navigation wouldn't feel clumsy.</p>
 
-				<p>With these two problems in mind, we decided to focus on building an in-museum experience to help visitors better understand pieces through storytelling, and supplemented this journey with an easier to use wayfinding system.</p>
+				<p>Historically, characters in Hearthstone have only ever been depicted laying against flat surfaces from a top-down perspective. Some of the classic Hearthstone-y representations I looked to were cards, gameplay ovals, hero arches, and round portraits. My initial layouts had the Mercenaries laying flat against a surface with buildings around them, however it was impossible to fit everything in one screen. I had to rethink the paradigm & dimensions entirely for the Village to work. </p>
 			</div>
+			<div class="partialContainer clearBot">
+				<div class="together1">
+					<div class="col4 left">
+						<img class="shadow" src="images/hsm/hsm-diagram-1.png" alt="Pinch to zoom" />
+						<h5 class="center">Collection Card</h5>
+					</div>	
+					<div class="col4 left">
+						<img class="shadow" src="images/hsm/hsm-diagram-2.png" alt="Track direction" />
+						<h5 class="center">Gameplay Oval</h5>
+					</div>	
+					<div class="col4 left">
+						<img class="shadow" src="images/hsm/hsm-diagram-3.png" alt="Drag to scroll" />
+						<h5 class="center">Hero Arch</h5>
+					</div>	
+					<div class="col4 left">
+						<img class="shadow" src="images/hsm/hsm-diagram-4.png" alt="Drag to scroll" />
+						<h5 class="center">Round Portrait</h5>
+					</div>	
+					<div class="clear"></div>
+				</div>
+			</div>	
+			
+			<div class="container text clearBot">
+				<p>Taking inspiration from board games, I added standees to the oval representation of the Mercenaries so that they could stand upright instead of lay flat. This allowed us to position the Mercenaries within a 3D Village and apply depth to feel evocative of a playset. I tuned the layout to ensure that buildings would be a reasonable tap size for mobile devices and we were able to move forward on our direction. What seemed like an impossible task was finally achievable now that we had perspective and depth to work with.</p>
+			</div>
+
+			<div class="partialContainer">
+				<img class="shadow" src="images/hsm/screen5.jpg" alt="The Mercenary Village links out to various other features in the game mode" />
+			</div>
+
 		</section>
 		
 		<section class="noTitle micro">
@@ -99,24 +147,7 @@
 				<hr />
 				<h2>Wayfinding</h2>
 				<p>We used a combination of familiar interactions, alongside interactions that made sense given the context and use of the device.</p>
-			</div>
-			<div class="partialContainer clearBot">
-				<div class="together1">
-					<div class="col3 left">
-						<h5 class="center">Pinch to Zoom</h5>
-						<img class="flushTop" src="images/lo/micro1.png" alt="Pinch to zoom" />
-					</div>	
-					<div class="col3 left">
-						<h5 class="center">Track Direction</h5>
-						<img class="flushTop" src="images/lo/micro2.png" alt="Track direction" />
-					</div>	
-					<div class="col3 left">
-						<h5 class="center">Drag to Scroll</h5>
-						<img class="flushTop" src="images/lo/micro3.png" alt="Drag to scroll" />
-					</div>	
-					<div class="clear"></div>
-				</div>
-			</div>			
+			</div>		
 			<div class="container text">
 				<hr />
 				<h2>Points of Interest</h2>

@@ -278,6 +278,11 @@ h5 {
 	position:relative;
 }
 
+.col4 {
+	width:25%;
+	position:relative;
+}
+
 .flex-row {
 	display:flex;
 	flex-direction:row;
@@ -509,6 +514,11 @@ section.lightBG {
 
 .adjustingCaption {
 	text-align:left;
+}
+
+.btnVid {
+	padding-bottom:42%;
+	margin:0;
 }
 
 /* .up {
@@ -2146,10 +2156,6 @@ section.lightBG {
 	width: 58%;
 }
 
-#shadowlands .btnVid {
-	padding-bottom:42%;
-	margin:0;
-}
 
 
 #shadowlands .norm {
@@ -2544,6 +2550,7 @@ section.lightBG {
 
 #village .logoBox img {
 	margin: 0 auto;
+	max-width:350px;
 }
 
 #village .logoBox h2 {
@@ -2576,9 +2583,7 @@ section.lightBG {
 	color:#EF7D30;
 }
 
-#village .colorBG .col2{
-	width:50%;
-}
+
 
 #village .colorBG img {
 	max-width:1000px;
@@ -2597,13 +2602,22 @@ section.lightBG {
 	max-width:550px;
 }
 
-#village .micro .col3 {
-	max-width:500px;
+#village .micro .col4 {
+	max-width:340px;
+}
+
+#village .col4 img {
+	
+	margin:15px auto;
 }
 
 #village .micro .together1 {
-	max-width:1500px;
+	max-width:1200px;
 	margin:0 auto;
+}
+
+#village .partialContainer {
+	max-width:2000px;
 }
 
 #village .micro .together2 {
@@ -2611,32 +2625,49 @@ section.lightBG {
 	margin:0 auto;
 }
 
-#village .micro .col2 img, #village .micro .col3 img {
+#village .micro .shadow {
+	
+	-webkit-filter: drop-shadow(7px 7px 0px rgb(0 0 0 / 20%));
+  	filter: drop-shadow(7px 7px 0px rgb(0 0 0 / 20%));
+}
+
+#village .micro .col2 img, #village .micro .col3 img,  #village .micro .col4 img {
 	width:auto;
-	max-width:100%;
+	max-width:80%;
 }
 
 @media only screen and (max-width: 1550px) {
 	#village .header .logoBox {
-		right:40px;
+		right:0px;
 		bottom:40px;
+		margin:0;
 	}
+
 }
 
 @media only screen and (max-width: 1350px) {
 	#village .header .logoBox {
-		text-align:right;
+		width:300px;
+		right:20px;
 	}
 	
 	#village .header h1, .header h2 {
 		font-size:50px;
 		
 	}
+	
+	#village .header .logoBox img {
+		max-width:300px;
+	}
 }
 
 @media only screen and (max-width: 1000px) {
+	
+	#village .header .logoBox img {
+		max-width:400px;
+	}
+	
 	#village .header h1, #village  .header h2 {
-		font-size:50px;
 		color:#fff;		
 	}
 	
@@ -2655,7 +2686,6 @@ section.lightBG {
 	}	
 	
 	#village .logoBox > p {
-		width:400px;
 		margin:30px auto;
 	}
 	
