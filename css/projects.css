@@ -2543,6 +2543,9 @@ section.lightBG {
 	padding-top:0;
 }
 
+#village .partialContainer {
+	max-width:2000px;
+}
 #village .header .logoBox {
 	width:500px;
 	right:3%;
@@ -2611,19 +2614,19 @@ section.lightBG {
 	margin:15px auto;
 }
 
-#village .micro .together1 {
+#village .diagram {
 	max-width:1200px;
 	margin:0 auto;
 }
 
-#village .partialContainer {
-	max-width:2000px;
+
+#village .credits{
+	width:630px;
+}
+#village .credits p {
+	width:500px;
 }
 
-#village .micro .together2 {
-	max-width:1150px;
-	margin:0 auto;
-}
 
 #village .micro .shadow {
 	
@@ -2705,6 +2708,13 @@ section.lightBG {
 	#village .emph {
 		font-size:20px;
 		line-height:1.4;
+	}
+	#village .credits p{
+		float:none;
+		width:90%;
+	}
+	#village .credits{
+		width:90%;
 	}
 }
 
