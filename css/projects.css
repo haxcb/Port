@@ -2716,6 +2716,13 @@ section.lightBG {
 	#village .credits{
 		width:90%;
 	}
+	#village .micro .col4  {
+		width:70%;
+		margin: 0 auto 30px auto;
+		float:none;
+	}
+
+
 }
 
 
